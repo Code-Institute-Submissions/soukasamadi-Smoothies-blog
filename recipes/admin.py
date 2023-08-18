@@ -1,7 +1,7 @@
 from django.contrib import admin
-
-from django.contrib import admin
 from .models import Category, Author, Recipe
+from django_summernote.admin import SummernoteModelAdmin
+
 
 
 @admin.register(Category)
@@ -23,7 +23,7 @@ class AuthorAdmin(admin.ModelAdmin):
 
 
 @admin.register(Recipe)
-class RecipeAdmin(admin.ModelAdmin):
+class RecipeAdmin(SummernoteModelAdmin):
     """
     Add fields which will use summernote editor in admin panel
     """
