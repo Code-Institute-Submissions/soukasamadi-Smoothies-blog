@@ -1,6 +1,4 @@
 from django.db import models
-
-from django.db import models
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
@@ -10,6 +8,17 @@ from django.urls import reverse
 
 STATUS = ((0, "Draft"), (1, "Published"))
 User = get_user_model()
+
+
+class Profile(models.Model):
+    """
+    Model for user profile
+    """
+    user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
+    image = CloudinaryField('image', default='placeholder')
+
+    def __str__(self):
+        return f'{self.user.username} Profile'
 
 
 class Category(models.Model):
@@ -65,7 +74,28 @@ class Recipe(models.Model):
     def __str__(self):
         return self.title
 
+    def number_of_likes(self):
+        return self.likes.count()
+
     def get_absolute_url(self):
         return reverse('post_detail', kwargs={
             'id': self.id
         })
+
+
+class Comment(models.Model):
+    """
+    Model for post comments
+    """
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="comments")
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    body = models.TextField()
+    timestamp = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ["timestamp"]
+
+    def __str__(self):
+        return f"Comment {self.body} by {self.name}"
