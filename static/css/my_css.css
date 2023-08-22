@@ -459,6 +459,21 @@ button,
     margin-right: 2px;
 }
 
+.grid-container-element-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+}
+
+.grid-child-element {
+    margin: 10px;
+}
+
+.social-media {
+    text-align: right;
+}
+
 
 
 /*******************************
