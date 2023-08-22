@@ -1,199 +1,253 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
 <!-- HERO SECTION -->
 <section id="hero">
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item bg-setup active"
-                style="background-image:url(https://img.freepik.com/free-photo/red-smoothie-with-raspberries-basil_23-2147684401.jpg?w=1060&t=st=1692598406~exp=1692599006~hmac=afa1bb38bca6b2b6b5bd3c46174b1d008332876b4b3d54464af08deaff958c27); height: 100vh;">
-                <!-- <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
-                        class="d-block w-100" alt="..."> -->
-                <div class="container">
-                    <div class="overlay"></div> 
-                    <div class="carousel-caption text-start">
-                        <h2>Example headline.</h2>
-                        <p>Some representative placeholder content for the first slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary mt-4" href="#content">Discover Now</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item bg-setup"
-                style="background-image:url(https://img.freepik.com/free-photo/glass-green-apple-healthy-smoothie-put-fresh-green-apples_1150-34484.jpg?w=1060&t=st=1692600203~exp=1692600803~hmac=a83e8aad01b397bf0fb726264313985bb9af1cf2dd20c4271a09989cad390d8d); height: 100vh;">
-                
-                <div class="container">
-                    <div class="overlay"></div>
-                    <div class="carousel-caption text-start">
-                        <h2>Another example headline.</h2>
-                        <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary mt-4" href="#content">Discover Now</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
     </div>
+    <div class="carousel-inner">
+      <div
+        class="carousel-item bg-setup active"
+        style="
+          background-image: url(https://img.freepik.com/free-photo/red-smoothie-with-raspberries-basil_23-2147684401.jpg?w=1060&t=st=1692598406~exp=1692599006~hmac=afa1bb38bca6b2b6b5bd3c46174b1d008332876b4b3d54464af08deaff958c27);
+          height: 80vh;
+        "
+      >
+        <!-- <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
+                        class="d-block w-100" alt="..."> -->
+        <div class="container">
+          <div class="overlay"></div>
+          <div class="carousel-caption text-start">
+            <h2>Example headline.</h2>
+            <p>
+              Some representative placeholder content for the first slide of the
+              carousel.
+            </p>
+            <p>
+              <a class="btn btn-lg btn-primary mt-4" href="#content"
+                >Discover Now</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item bg-setup"
+        style="
+          background-image: url(https://img.freepik.com/free-photo/glass-green-apple-healthy-smoothie-put-fresh-green-apples_1150-34484.jpg?w=1060&t=st=1692600203~exp=1692600803~hmac=a83e8aad01b397bf0fb726264313985bb9af1cf2dd20c4271a09989cad390d8d);
+          height: 80vh;
+        "
+      >
+        <div class="container">
+          <div class="overlay"></div>
+          <div class="carousel-caption text-start">
+            <h2>Another example headline.</h2>
+            <p>
+              Some representative placeholder content for the second slide of
+              the carousel.
+            </p>
+            <p>
+              <a class="btn btn-lg btn-primary mt-4" href="#content"
+                >Discover Now</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#myCarousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#myCarousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </section>
 <!-- END OF HERO SECTION -->
 <!-- CONTENT SECTION -->
 <section id="content" class="content">
-    <h2 class="title"> Our Recepies</h2>
-    <div class="container">
-        <div class="row row-reverse">
-            {% for recipe in recipe_list %}
-            {% if forloop.counter == 1 %}
-            <div class="col-md-3">
-                <a href="{% url 'recipe_detail' recipe.slug %}">
-                    <div class="content-img">
-                        <div class="overlay"></div>
-                        <img src="{{ recipe.featured_image.url }}" alt="{{ recipe.title }} Image">
-                        <div class="content-categorie">
-                            <h4><i class="fas fa-cutlery"></i> {{ recipe.title }}</h4>
-                            {% for cat in recipe.categories.all %}
-                            <h4><i class="fas fa-bowl-rice"></i>{{ cat }}</h4>
-                            {% endfor %}
-                            <h4><i class="fas fa-clock"></i> {{ recipe.time_to_prepar }} Minutes</h4>
-                            {% if recipe.stars == 5 %}
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            {% elif recipe.stars == 4 %}
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            {% else%}
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-stroke"></i>
-                            {% endif %}
-                            <div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+  <h2 class="title">Our Recepies</h2>
+  <div class="container">
+    <div class="row row-reverse">
+      {% for recipe in recipe_list %} {% if forloop.counter == 1 %}
+      <div class="col-md-3">
+        <a href="{% url 'recipe_detail' recipe.slug %}">
+          <div class="content-img">
+            <div class="overlay"></div>
+            <img
+              src="{{ recipe.featured_image.url }}"
+              alt="{{ recipe.title }} Image"
+            />
+            <div class="content-categorie">
+              <h4><i class="fas fa-cutlery"></i> {{ recipe.title }}</h4>
+              {% for cat in recipe.categories.all %}
+              <h4><i class="fas fa-bowl-rice"></i>{{ cat }}</h4>
+              {% endfor %}
+              <h4>
+                <i class="fas fa-clock"></i> {{ recipe.time_to_prepar }} Minutes
+              </h4>
+              {% if recipe.stars == 5 %}
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              {% elif recipe.stars == 4 %}
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              {% else%}
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-stroke"></i>
+              {% endif %}
+              <div></div>
             </div>
-            {% elif forloop.counter == 2 %}
-            <div class="col-md-3">
-                <a href="{% url 'recipe_detail' recipe.slug %}">
-                    <div class="content-img">
-                        <div class="overlay"></div>
-                        <img src="{{ recipe.featured_image.url }}" alt="">
-                        <div class="content-categorie">
-                            <h4><i class="fas fa-cutlery"></i> {{ recipe.title }}</h4>
-                            {% for cat in recipe.categories.all %}
-                            <h4><i class="fas fa-bowl-rice"></i>{{ cat }}</h4>
-                            {% endfor %}
-                            <h4><i class="fas fa-clock"></i> {{ recipe.time_to_prepar }} Minutes</h4>
-                            {% if recipe.stars == 5 %}
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            {% elif recipe.stars == 4 %}
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            {% else%}
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-stroke"></i>
-                            {% endif %}
-                        </div>
-                    </div>
-                </a>
-            </div>    
-            {% elif forloop.counter == 3 %}
-            <div class="col-md-3">
-                <a href="{% url 'recipe_detail' recipe.slug %}">
-                    <div class="content-img">
-                        <div class="overlay"></div>
-                        <img src="{{ recipe.featured_image.url }}" alt="">
-                        <div class="content-categorie">
-                            <h4><i class="fas fa-cutlery"></i> {{ recipe.title }}</h4>
-                            {% for cat in recipe.categories.all %}
-                            <h4><i class="fas fa-bowl-rice"></i>{{ cat }}</h4>
-                            {% endfor %}
-                            <h4><i class="fas fa-clock"></i> {{ recipe.time_to_prepar }} Minutes</h4>
-                            {% if recipe.stars == 5 %}
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            {% elif recipe.stars == 4 %}
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            {% else%}
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-stroke"></i>
-                            {% endif %}
-                        </div>
-                    </div>
-                </a>
+          </div>
+        </a>
+      </div>
+      {% elif forloop.counter == 2 %}
+      <div class="col-md-3">
+        <a href="{% url 'recipe_detail' recipe.slug %}">
+          <div class="content-img">
+            <div class="overlay"></div>
+            <img src="{{ recipe.featured_image.url }}" alt="" />
+            <div class="content-categorie">
+              <h4><i class="fas fa-cutlery"></i> {{ recipe.title }}</h4>
+              {% for cat in recipe.categories.all %}
+              <h4><i class="fas fa-bowl-rice"></i>{{ cat }}</h4>
+              {% endfor %}
+              <h4>
+                <i class="fas fa-clock"></i> {{ recipe.time_to_prepar }} Minutes
+              </h4>
+              {% if recipe.stars == 5 %}
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              {% elif recipe.stars == 4 %}
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              {% else%}
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-stroke"></i>
+              {% endif %}
             </div>
-            {% elif forloop.counter == 4 %}
-            <div class="col-md-3">
-                <a href="{% url 'recipe_detail' recipe.slug %}">
-                    <div class="content-img">
-                        <div class="overlay"></div>
-                        <img src="{{ recipe.featured_image.url }}" alt="">
-                        <div class="content-categorie">
-                            <h4><i class="fas fa-cutlery"></i> {{ recipe.title }}</h4>
-                            {% for cat in recipe.categories.all %}
-                            <h4><i class="fas fa-bowl-rice"></i>{{ cat }}</h4>
-                            {% endfor %}
-                            <h4><i class="fas fa-clock"></i> {{ recipe.time_to_prepar }} Minutes</h4>
-                            {% if recipe.stars == 5 %}
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            {% elif recipe.stars == 4 %}
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            {% else%}
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-stroke"></i>
-                            {% endif %}
-                        </div>
-                    </div>
-                </a>
-            </div>   
-            {% endif %}
-            {% endfor %}
-        </div>
+          </div>
+        </a>
+      </div>
+      {% elif forloop.counter == 3 %}
+      <div class="col-md-3">
+        <a href="{% url 'recipe_detail' recipe.slug %}">
+          <div class="content-img">
+            <div class="overlay"></div>
+            <img src="{{ recipe.featured_image.url }}" alt="" />
+            <div class="content-categorie">
+              <h4><i class="fas fa-cutlery"></i> {{ recipe.title }}</h4>
+              {% for cat in recipe.categories.all %}
+              <h4><i class="fas fa-bowl-rice"></i>{{ cat }}</h4>
+              {% endfor %}
+              <h4>
+                <i class="fas fa-clock"></i> {{ recipe.time_to_prepar }} Minutes
+              </h4>
+              {% if recipe.stars == 5 %}
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              {% elif recipe.stars == 4 %}
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              {% else%}
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-stroke"></i>
+              {% endif %}
+            </div>
+          </div>
+        </a>
+      </div>
+      {% elif forloop.counter == 4 %}
+      <div class="col-md-3">
+        <a href="{% url 'recipe_detail' recipe.slug %}">
+          <div class="content-img">
+            <div class="overlay"></div>
+            <img src="{{ recipe.featured_image.url }}" alt="" />
+            <div class="content-categorie">
+              <h4><i class="fas fa-cutlery"></i> {{ recipe.title }}</h4>
+              {% for cat in recipe.categories.all %}
+              <h4><i class="fas fa-bowl-rice"></i>{{ cat }}</h4>
+              {% endfor %}
+              <h4>
+                <i class="fas fa-clock"></i> {{ recipe.time_to_prepar }} Minutes
+              </h4>
+              {% if recipe.stars == 5 %}
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              {% elif recipe.stars == 4 %}
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              {% else%}
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-stroke"></i>
+              {% endif %}
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endif %} {% endfor %}
     </div>
+  </div>
 </section>
 <!-- CONTENT SECTION -->
 
