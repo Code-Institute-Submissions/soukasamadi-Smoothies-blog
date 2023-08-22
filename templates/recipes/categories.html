@@ -1,0 +1,51 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!-- SUB HERO SECTION -->
+<div
+  class="hero-bg-setup"
+  style="
+    background-image: url(https://img.freepik.com/fotos-kostenlos/flach-liegen-bunte-smoothies-in-glaesern_23-2148303010.jpg?w=1060&t=st=1692738242~exp=1692738842~hmac=c25ca67a3bcc9bd8bb0436dfcc965081d140f44a7e3902bb5130649814ced1dc);
+    height: 70vh;
+    background-position: center;
+  "
+>
+  <div class="sub-hero-content">
+    <h3 class="hero-center b-bg">HOME / RECIPES</h3>
+    <h1 class="hero-center w-bg w-bg-h1">Recipes</h1>
+    <p class="hero-center w-bg w-bg-p">
+      Explore my collection of plant-based smoothies recipes plus my natural
+      healing remedies. Taking steps towards a healthier life starts right here
+      with simple and tasty recipes that transform your body. The more recipes
+      you commit to making from this collection, the better you will feel. I
+      have a feeling these recipes will become your staples.
+    </p>
+  </div>
+</div>
+<!-- END OF SUB HERO -->
+<!-- CATEGORIES SECTION -->
+<section id="content" class="content content-categories">
+  <h2 class="title">ALL RECIPES</h2>
+  <div class="container">
+    <div class="row">
+      {{ cats }} {% for category in categories_list %}
+      <div class="col-md-4">
+        <a href="{% url 'categories_posts' category.title %}">
+          <div class="content-img">
+            <div class="overlay"></div>
+            <img
+              src="{{ category.category_image.url}}"
+              alt=" {{ category.title }} Image"
+            />
+            <div class="content-categorie content-categorie-center">
+              <h3>{{ category.title}}</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor%}
+    </div>
+  </div>
+</section>
+<!-- END OF CATEGORIES SECTION -->
+
+{% endblock content %}

@@ -12,6 +12,9 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('about/', views.about, name="about"),
     path('contact/', views.contact, name="contact"),
+    path('categories/', views.categories, name="categories"),
+    path('categories_posts/<str:cats>',
+         views.CategoriesView, name="categories_posts"),
     path('<slug:slug>/', views.RecipeDetail.as_view(), name='recipe_detail'),
 ]
 
