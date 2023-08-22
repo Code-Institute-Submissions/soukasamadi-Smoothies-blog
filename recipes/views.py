@@ -78,6 +78,11 @@ class RecipeDetail(View):
             },
         )
 
-        post
 
-
+def about(request):
+    """View to return the about page"""
+    categories = Category.objects.all()
+    context = {
+        'categories_list': categories
+    }
+    return render(request, 'about.html', context)

@@ -10,6 +10,7 @@ from .views import *
 """url paths"""
 urlpatterns = [
     path('', views.index, name="index"),
+    path('about/', views.about, name="about"),
     path('<slug:slug>/', views.RecipeDetail.as_view(), name='recipe_detail'),
 ]
 
