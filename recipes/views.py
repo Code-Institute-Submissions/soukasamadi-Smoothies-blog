@@ -85,4 +85,4 @@ def about(request):
     context = {
         'categories_list': categories
     }
-    return render(request, 'about.html', context)
+    return render(request, 'recipes/about.html', context)
