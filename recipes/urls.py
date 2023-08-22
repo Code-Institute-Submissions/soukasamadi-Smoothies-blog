@@ -11,6 +11,7 @@ from .views import *
 urlpatterns = [
     path('', views.index, name="index"),
     path('about/', views.about, name="about"),
+    path('contact/', views.contact, name="contact"),
     path('<slug:slug>/', views.RecipeDetail.as_view(), name='recipe_detail'),
 ]
 

@@ -501,6 +501,34 @@ button,
 }
 
 
+/*******************************
+*                              *
+*        CONTACT PAGE          *
+*                              *
+*******************************/
+#contact {
+    margin-top: 50px;
+}
+
+#contact .contact-details {
+    padding: 50px 33px;
+    color: #0b0c0c;
+    margin-top: 50px;
+}
+
+.submit-btn {
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #0b0c0c;
+}
+
+#contact .contact-details h4 {
+    margin-bottom: 50px;
+}
+
+
 
 /*******************************
 *                              *
