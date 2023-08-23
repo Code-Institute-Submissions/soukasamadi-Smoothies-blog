@@ -806,4 +806,14 @@ button,
         width: 100% !important;
     }
 
+    #profile .form-control {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    input {
+        font-size: 12px;
+    }
+
 }
