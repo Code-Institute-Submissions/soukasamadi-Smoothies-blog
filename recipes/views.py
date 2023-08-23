@@ -113,3 +113,13 @@ def CategoriesView(request, cats):
     categories_posts = Post.objects.filter(categories__title__contains=cats)
     return render(request, 'categories_posts.html', {
         'cats': cats.title(), 'categories_posts': categories_posts})
+
+
+class BlogRecipe(generic.ListView):
+    """
+    Renders the blog page
+    """
+    model = Recipe
+    queryset = Recipe.objects.filter(status=1)
+    template_name = 'recipes/blog.html'
+    paginate_by = 6
