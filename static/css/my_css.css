@@ -384,12 +384,16 @@ button,
     cursor: pointer;
 }
 
-.content .content-img:hover .overlay {
-    opacity: 0.2;
+
+.content .content-img .content-categorie h4 {
+    color: #0b0c0c;
 }
 
-.content .content-img:hover .content-categorie h4 {
-    color: var(--interative-color);
+.content-categorie h4 {
+    color: #0b0c0c;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 15px;
 }
 
 .content .col-md-8 img,
@@ -401,18 +405,6 @@ button,
     position: relative;
 }
 
-.content .content-categorie h4 {
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
-}
-
-.content .content-categorie {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: 0;
-    color: #fff;
-    padding: 25px;
-}
 
 .content .content-categorie-center {
     text-align: center;
