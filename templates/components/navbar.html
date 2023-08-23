@@ -71,11 +71,11 @@
                 </li>
                 <li><img class="author-img" src="{{ user.profile.image.url }}" alt="{{ user.username }} Image"></li>
 
-                <a class="nav-link test-center" href="{#% url 'account_logout' %#}"> Logout</a>
+                <a class="nav-link test-center" href="{% url 'account_logout' %}"> Logout</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{#% url 'account_login' %#}"><i class="fas fa-user"></i>Login</a>
+                    <a class="nav-link" href="{% url 'account_login' %}"><i class="fas fa-user"></i>Login</a>
                 </li>
                 {% endif %}
             </ul>
