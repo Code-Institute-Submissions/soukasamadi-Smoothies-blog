@@ -10,6 +10,7 @@ from .views import *
 """url paths"""
 urlpatterns = [
     path('', views.index, name="index"),
+    path('search/', views.search, name="search"),
     path('about/', views.about, name="about"),
     path('contact/', views.contact, name="contact"),
     path('blog/', views.BlogRecipe.as_view(), name="blog"),

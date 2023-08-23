@@ -1,5 +1,6 @@
 from django.views import generic, View
 from .models import *
+from django.db.models import Q
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.http import HttpResponseRedirect
@@ -141,6 +142,23 @@ def categories_view(request, cats):
         categories__title__contains=cats, status=1)
     return render(request, 'recipes/categories_posts.html', {
         'cats': cats.title(), 'categories_posts': categories_posts})
+
+
+def search(request):
+    """search results"""
+    if request.method == "POST":
+        searched = request.POST["searched"]
+        results = Post.objects.filter(
+            Q(title__contains=searched) |
+            Q(overview__icontains=searched) |
+            Q(content__icontains=searched)
+        ).distinct()
+
+        return render(request, 'search.html', {
+            'results': results, 'searched': searched})
+    else:
+
+        return render(request, 'search.html', {})
 
 
 class BlogRecipe(generic.ListView):
