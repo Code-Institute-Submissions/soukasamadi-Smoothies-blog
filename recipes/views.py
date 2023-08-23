@@ -1,5 +1,7 @@
 from django.views import generic, View
 from .models import *
+from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 from django.http import HttpResponseRedirect
 from .forms import CommentForm, UserUpdateForm, ProfileUpdateForm
 from django.shortcuts import (
@@ -79,6 +81,12 @@ class RecipeDetail(View):
             },
         )
 
+    def get_context_data(self, *args, **kwargs):
+        categories_list = Category.objects.all()
+        context = super(RecipeDetail, self).get_context_data(*args, **kwargs)
+        context["categories_list"] = categories_list
+        return context
+
 
 class RecipeLike(View):
     """View for post like/Unlike"""
@@ -121,10 +129,17 @@ def categories(request):
     return render(request, 'recipes/categories.html', context)
 
 
-def CategoriesView(request, cats):
-    """View to return the posts filtered by categories"""
-    categories_posts = Post.objects.filter(categories__title__contains=cats)
-    return render(request, 'categories_posts.html', {
+def categories_view(request, cats):
+    """
+    Renders the posts filtered by categories
+    """
+    categories = Category.objects.all()
+    context = {
+        'categories_list': categories
+    }
+    categories_posts = Recipe.objects.filter(
+        categories__title__contains=cats, status=1)
+    return render(request, 'recipes/categories_posts.html', {
         'cats': cats.title(), 'categories_posts': categories_posts})
 
 
@@ -136,3 +151,9 @@ class BlogRecipe(generic.ListView):
     queryset = Recipe.objects.filter(status=1)
     template_name = 'recipes/blog.html'
     paginate_by = 6
+
+    def get_context_data(self, *args, **kwargs):
+        categories_list = Category.objects.all()
+        context = super(BlogRecipe, self).get_context_data(*args, **kwargs)
+        context["categories_list"] = categories_list
+        return context

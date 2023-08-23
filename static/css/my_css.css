@@ -633,16 +633,7 @@ button,
     display: block;
 }
 
-.enjoy-box {
-    text-align: center;
-    font-size: 3rem;
-    transform: rotate(-15deg) !important;
-    margin-top: 50px !important;
-}
 
-.enjoy-box span {
-    font-family: 'Kaushan Script', cursive;
-}
 
 
 

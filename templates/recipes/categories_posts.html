@@ -1,0 +1,191 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!-- SUB HERO SECTION -->
+<div
+  class="hero-bg-setup"
+  style="
+    background-image: url(https://simplegreensmoothies.com/wp-content/uploads/About-Simple-green-smoothies-HERO.jpg);
+    height: 70vh;
+  "
+>
+  <div class="sub-hero-content">
+    {% for cat in recipe.categories.all %}
+    <h4 class="hero-center b-bg">Home / Recipes / {{ cat }}</h4>
+    <h1 class="hero-center w-bg w-bg-h1">{{ cat }}</h1>
+    {% endfor %}
+    <p class="hero-center w-bg w-bg-p">
+      Discover the best tasting smoothies using a plant-based diet protocol of
+      whole foods to nourish the body. From green smoothies to smoothie bowls to
+      protein shakes, enjoy our collection of the best tasting and healthiest
+      smoothie recipes out there.
+    </p>
+  </div>
+</div>
+<!-- END OF SUB HERO -->
+
+<!-- CONTENT BLOG SECTION 1-->
+<section id="blog-content-1" class="content">
+  <h2 class="title">
+    Category <br /><span class="color-light">{{ cats }}</span>
+  </h2>
+  {% if categories_posts %}
+  <div class="container">
+    <div class="row">
+      {% for post in categories_posts %} {% if forloop.counter == 2%}
+      <div class="col-md-4">
+        <a href="{% url 'recipe_detail' recipe.slug %}">
+          <div class="content-box bg-linear-gradient">
+            <div class="content-img">
+              <img src="{{ post.featured_image.url }}" alt="" />
+            </div>
+            <div class="content-description">
+              <h4>{{ recipe.title }}</h4>
+              <p>{{ recipe.overview | slice:":100"}} . . .</p>
+            </div>
+            <div class="author-info">
+              <span
+                ><img
+                  class="author-img"
+                  src="{{ recipe.author.author_picture.url }}"
+                  alt="{{ recipe.author }} Image"
+              /></span>
+              <span>{{ recipe.author }} | </span>
+              <span
+                ><i class="fas fa-clock"></i>{{ recipe.timestamp | timesince }}|
+              </span>
+              <span
+                ><i class="fas fa-heart"></i>{{ recipe.number_of_likes }}</span
+              >
+              <span>| <i class="far fa-comments"></i>{{ num_comments }}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% else%}
+      <div class="col-md-4">
+        <a href="{% url 'recipe_detail' recipe.slug %}">
+          <div class="content-box">
+            <div class="content-img">
+              <img src="{{ recipe.featured_image.url }}" alt="" />
+            </div>
+            <div class="content-description">
+              <h4>{{ recipe.title }}</h4>
+              <p>{{ post.overview | slice:":100"}} . . .</p>
+            </div>
+            <div class="author-info">
+              <span
+                ><img
+                  class="author-img"
+                  src="{{ recipe.author.author_picture.url }}"
+                  alt="{{ recipe.author }} Image"
+              /></span>
+              <span>{{ recipe.author }} | </span>
+              <span
+                ><i class="fas fa-clock"></i>{{ recipe.timestamp | timesince }}|
+              </span>
+              <span
+                ><i class="fas fa-heart"></i>{{ recipe.number_of_likes }}</span
+              >
+              <span>| <i class="far fa-comments"></i>{{ num_comments }}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+  {% else %}
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Sorry this page does not exist!</h2>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</section>
+<!-- END OF CONTENT BLOG SECTION -->
+
+<!-- CONTENT BLOG SECTION 2 (UNDER 991px)-->
+<section id="blog-content-2" class="content">
+  {% if categories_posts %}
+  <div class="container">
+    <div class="row">
+      {% for post in categories_posts %} {% if forloop.counter == 2%}
+      <div class="col-md-6">
+        <a href="{% url 'recipe_detail' recipe.slug %}">
+          <div class="content-box bg-linear-gradient">
+            <div class="content-img">
+              <img src="{{ recipe.featured_image.url }}" alt="" />
+              <div class="content-categorie"></div>
+            </div>
+            <div class="content-description">
+              <h4>{{ recipe.title }}</h4>
+              <p>{{ post.overview | slice:":100"}} . . .</p>
+            </div>
+            <div class="author-info">
+              <span
+                ><img
+                  class="author-img"
+                  src="{{ recipe.author.author_picture.url }}"
+                  alt="{{ recipe.author }} Image"
+              /></span>
+              <span>{{ recipe.author }} | </span>
+              <span
+                ><i class="fas fa-clock"></i>{{ recipe.timestamp | timesince }}|
+              </span>
+              <span
+                ><i class="fas fa-heart"></i>{{ recipe.number_of_likes }}</span
+              >
+              <span>| <i class="far fa-comments"></i>{{ num_comments }}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% else%}
+      <div class="col-md-6">
+        <a href="{% url 'recipe_detail' recipe.slug %}">
+          <div class="content-box">
+            <div class="content-img">
+              <img src="{{ recipe.featured_image.url }}" alt="" />
+              <div class="content-categorie"></div>
+            </div>
+            <div class="content-description">
+              <h4>{{ recipe.title }}</h4>
+              <p>{{ recipe.overview | slice:":100"}} . . .</p>
+            </div>
+            <div class="author-info">
+              <span
+                ><img
+                  class="author-img"
+                  src="{{ recipe.author.author_picture.url }}"
+                  alt="{{ recipe.author }} Image"
+              /></span>
+              <span>{{ post.author }} | </span>
+              <span
+                ><i class="fas fa-clock"></i>{{ recipe.timestamp | timesince }}|
+              </span>
+              <span
+                ><i class="fas fa-heart"></i>{{ recipe.number_of_likes }}</span
+              >
+              <span>| <i class="far fa-comments"></i>{{ num_comments }}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+  {% else %}
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Sorry this page does not exist!</h2>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</section>
+<!-- END OF CONTENT BLOG SECTION 2 -->
+
+{% endblock content %}
