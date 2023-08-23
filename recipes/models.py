@@ -25,6 +25,8 @@ class Category(models.Model):
     """
     Model for category
     """
+    class Meta:
+        verbose_name_plural = 'Categories'
     title = models.CharField(max_length=20)
     category_image = CloudinaryField('image', default='placeholder')
 
@@ -87,7 +89,8 @@ class Comment(models.Model):
     """
     Model for post comments
     """
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="comments")
+    recipe = models.ForeignKey(
+        Recipe, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=100)
     email = models.EmailField()
     body = models.TextField()
