@@ -30,6 +30,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+
 ALLOWED_HOSTS = ['8000-soukasamadi-smoothies-bl-yz6c5tuj4p.us2.codeanyapp.com',
                  'smoothies-blog-fb8590efb21e.herokuapp.com', 'localhost']
 
