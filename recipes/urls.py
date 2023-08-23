@@ -20,6 +20,7 @@ urlpatterns = [
     path('<slug:slug>/', views.RecipeDetail.as_view(), name='recipe_detail'),
     path('like/<slug:slug>', views.RecipeLike.as_view(), name='recipe_like'),
     path('accounts/', include('allauth.urls')),
+    path('profile', views.ProfileView, name='profile'),
 ]
 
 if settings.DEBUG:
