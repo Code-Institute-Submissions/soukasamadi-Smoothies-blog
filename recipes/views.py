@@ -146,6 +146,7 @@ def categories_view(request, cats):
 
 def search(request):
     """search results"""
+    queryset = Post.objects.all()
     if request.method == "POST":
         searched = request.POST["searched"]
         results = Post.objects.filter(
@@ -153,12 +154,15 @@ def search(request):
             Q(overview__icontains=searched) |
             Q(content__icontains=searched)
         ).distinct()
+        context = {
+            'queryset': queryset
+        }
 
         return render(request, 'search.html', {
             'results': results, 'searched': searched})
     else:
 
-        return render(request, 'search.html', {})
+        return render(request, 'search.html', context)
 
 
 class BlogRecipe(generic.ListView):
