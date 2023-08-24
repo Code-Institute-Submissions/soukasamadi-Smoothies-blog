@@ -62,6 +62,16 @@
       type="text/css"
       href="{% static 'css/my_css.css' %}"
     />
+    <!-- Email Js   -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("cC-DOlxja-pr2ccKv");
+      })();
+    </script>
 
     <body></body>
   </head>
