@@ -520,6 +520,15 @@ button,
     margin-bottom: 50px;
 }
 
+#contatc .email_sent_message {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#contatc .email_sent_message h4 {
+    font-size: clamp(1.2rem, 2vw, 1rem);
+}
+
 
 /*******************************
 *                              *
@@ -631,6 +640,31 @@ button,
 #post-content .post-content-img {
     width: 85%;
     display: block;
+}
+
+
+/*******************************
+*                              *
+*         LOGIN PAGES          *
+*                              *
+*******************************/
+
+.logs-pages {
+    top: 0;
+    left: 0;
+    height: 70vh;
+    transform: translateY(20%);
+    height: 70vh;
+}
+
+.log-out {
+    transform: translateY(50%);
+    height: 60vh;
+    margin-bottom: 120px;
+}
+
+.signup {
+    transform: translateY(25%);
 }
 
 
