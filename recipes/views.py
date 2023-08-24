@@ -223,3 +223,12 @@ class BlogRecipe(generic.ListView):
         context = super(BlogRecipe, self).get_context_data(*args, **kwargs)
         context["categories_list"] = categories_list
         return context
+
+
+def delete_comment(request, comment_id):
+    """Delete comment"""
+    comment = get_object_or_404(Comment, id=comment_id)
+    comment.delete()
+    messages.success(request, 'Your comment was deleted successfully')
+    return HttpResponseRedirect(reverse(
+        'recipe_detail', args=[comment.recipe.slug]))
