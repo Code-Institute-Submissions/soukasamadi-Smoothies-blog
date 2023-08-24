@@ -201,6 +201,10 @@ button,
     margin-top: 50px !important;
 }
 
+#searched-box .searched-results .row:hover {
+    background: rgb(228, 228, 228);
+}
+
 /*******************************
 *                              *
 *          NAVBAR              *
