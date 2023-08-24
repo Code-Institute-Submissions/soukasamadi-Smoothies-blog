@@ -650,6 +650,14 @@ button,
     display: block;
 }
 
+.modal {
+    top: 90px !important;
+}
+
+body.modal-open {
+    overflow: visible !important;
+}
+
 
 /*******************************
 *                              *
@@ -779,6 +787,10 @@ button,
     .row-reverse .col-md-4,
     .row-reverse .col-md-8 {
         width: 100%;
+    }
+
+    .content-description h4 {
+        margin-top: 15px;
     }
 
     .content-description h4 {

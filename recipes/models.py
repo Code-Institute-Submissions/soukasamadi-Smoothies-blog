@@ -12,7 +12,7 @@ User = get_user_model()
 
 class Profile(models.Model):
     """
-    Model for user profile
+    Model for user profil
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = CloudinaryField('image')
