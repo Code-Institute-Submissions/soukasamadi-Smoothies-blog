@@ -1,3 +1,4 @@
+// Emailjs script
 function sendMail(contactForm) {
     emailjs
         .send("service_jui1hv6", "tasty_blog_contact", {
@@ -17,7 +18,7 @@ function sendMail(contactForm) {
             function (error) {
                 document.getElementById(
                     "email_alert"
-                ).innerHTML = `<h4 class="email-sent-message  alert-danger">Sorry, something went wrong!
+                ).innerHTML = `<h4 class="email-sent-message alert-danger">Sorry, something went wrong!
             <br> Try to send an email again.</h4>`;
             }
         );
