@@ -41,7 +41,10 @@
               simple and tasty recipes that transform your body.
             </p>
             <p>
-              <a class="btn btn-lg btn-primary mt-4" href="#content"
+              <a
+                class="btn btn-lg btn-primary mt-4"
+                href="#content"
+                aria-label="Go to the content home section"
                 >Discover Now</a
               >
             </p>
@@ -56,8 +59,6 @@
           height: 80vh;
         "
       >
-        <!-- <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
-                            class="d-block w-100" alt="..."> -->
         <div class="container">
           <div class="carousel-caption text-start">
             <h2>MEAL REPLACEMENT SMOOTHIES</h2>
@@ -67,7 +68,10 @@
               upgrade your breakfast and energize your day.
             </p>
             <p>
-              <a class="btn btn-lg btn-primary mt-4" href="#content"
+              <a
+                class="btn btn-lg btn-primary mt-4"
+                href="#content"
+                aria-label="Go to the content home section"
                 >Discover Now</a
               >
             </p>
@@ -90,7 +94,10 @@
               staples.
             </p>
             <p>
-              <a class="btn btn-lg btn-primary mt-4" href="#content"
+              <a
+                class="btn btn-lg btn-primary mt-4"
+                href="#content"
+                aria-label="Go to the content home section"
                 >Discover Now</a
               >
             </p>
@@ -126,7 +133,10 @@
     <div class="row row-reverse">
       {% for recipe in recipe_list %} {% if forloop.counter == 1 %}
       <div class="col-md-3">
-        <a href="{% url 'recipe_detail' recipe.slug %}">
+        <a
+          href="{% url 'recipe_detail' recipe.slug %}"
+          aria-label="Go to the recipe detail page"
+        >
           <div class="content-img">
             <img
               src="{{ recipe.featured_image.url }}"
@@ -140,7 +150,10 @@
       </div>
       {% elif forloop.counter == 2 %}
       <div class="col-md-3">
-        <a href="{% url 'recipe_detail' recipe.slug %}">
+        <a
+          href="{% url 'recipe_detail' recipe.slug %}"
+          aria-label="Go to the recipe detail page"
+        >
           <div class="content-img">
             <img
               src="{{ recipe.featured_image.url }}"
@@ -154,7 +167,10 @@
       </div>
       {% elif forloop.counter == 3 %}
       <div class="col-md-3">
-        <a href="{% url 'recipe_detail' recipe.slug %}">
+        <a
+          href="{% url 'recipe_detail' recipe.slug %}"
+          aria-label="Go to the recipe detail page"
+        >
           <div class="content-img">
             <img
               src="{{ recipe.featured_image.url }}"
@@ -168,7 +184,10 @@
       </div>
       {% elif forloop.counter == 4 %}
       <div class="col-md-3">
-        <a href="{% url 'recipe_detail' recipe.slug %}">
+        <a
+          href="{% url 'recipe_detail' recipe.slug %}"
+          aria-label="Go to the recipe detail page"
+        >
           <div class="content-img">
             <img
               src="{{ recipe.featured_image.url }}"
