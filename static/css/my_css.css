@@ -121,6 +121,8 @@ button,
     margin-top: 50px;
 }
 
+
+
 /*******************************
 *                              *
 *          SEARCH BOX          *
@@ -163,6 +165,7 @@ button,
 .fa-search {
     font-size: 1.5rem;
 }
+
 
 /*******************************
 *                              *
@@ -704,6 +707,12 @@ button,
 *        MEDIA QUERIES         *
 *                              *
 *******************************/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .book-card .content-description p {
+        margin-bottom: 130px !important;
+    }
+}
+
 @media only screen and (max-width: 991px) {
 
     .navbar {
@@ -719,28 +728,26 @@ button,
     }
 
     .navbar-toggler:focus {
+        -webkit-box-shadow: rgb(1 1 1 / 50%) 1px 10px 10px -1px;
         box-shadow: rgb(1 1 1 / 50%) 1px 10px 10px -1px;
     }
 
-    .login-items {
-        bottom: -8px !important;
-    }
-
-
-    .login-box {
+    .login-box,
+    .logout-box {
         position: absolute;
-        right: 5px;
-        bottom: 15px;
+        right: 25px;
+        bottom: 5px;
     }
 
-    #blog-content-1 {
+    #blog-content-1,
+    #books-content-1 {
         display: none;
     }
 
-    #blog-content-2 {
-        display: block;
+    #blog-content-2,
+    #books-content-2 {
+        display: block !important;
     }
-
 
     #post-content .post-content-img {
         width: 100%;
@@ -751,6 +758,9 @@ button,
     }
 
     .row-reverse {
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
         flex-direction: column !important;
     }
 
@@ -758,9 +768,13 @@ button,
     .row-reverse .col-md-8 {
         width: 100%;
     }
+
+    .content-description h4 {
+        margin-top: 15px;
+    }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
     .content .col-md-8 img {
         margin-bottom: 15px;
     }
@@ -769,17 +783,16 @@ button,
         text-align: center;
     }
 
-    #searched-box .row {
-        padding: 25px 0 97px;
-    }
-
     #contact .contact-details {
         padding: 50px 33px;
-        margin: 0;
+        margin: 20px 0;
+    }
+
+    #searched-box .row {
+        padding: 34px 0;
     }
 
     #searched-box .container {
-
         margin-bottom: 25vh !important;
     }
 
@@ -787,7 +800,6 @@ button,
         width: 60%;
         margin: 0 auto;
         display: block;
-        margin-top: -80px;
     }
 
     #searched-box .info-text {
@@ -795,14 +807,17 @@ button,
         margin-bottom: -10% !important;
     }
 
-    #searched-box .results-empty .info-text {
-        margin-top: 6%;
-        margin-bottom: -10% !important;
+    #searched-box .results-empty h2 {
+        margin-top: 15%;
+        margin-bottom: 15% !important;
     }
 
     #searched-box .results-null {
-        margin-top: -30px !important;
-        text-align: center;
+        margin-top: 15% !important;
+    }
+
+    #searched-box .results-null .col-md-12 {
+        text-align: center !important;
     }
 
     #profile .user-info-box {
@@ -810,6 +825,19 @@ button,
         margin-top: 25px;
     }
 
+    .logs-pages {
+        -webkit-transform: translateY(-5%);
+        -ms-transform: translateY(-5%);
+        transform: translateY(-5%);
+    }
+
+    .edit-comments form textarea {
+        padding: 6px;
+    }
+
+    .book-card .content-description p {
+        margin-bottom: 75px !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -847,6 +875,36 @@ button,
     #profile .form-control {
         width: 90% !important;
     }
+
+    .main-bg-mobile {
+        display: block !important;
+    }
+
+    .main-bg-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #contact .container {
+        padding: 0 20px !important;
+    }
+
+    #contact .container .col-md-8 {
+        padding: 0 10px 15px;
+    }
+
+    input#id_picture {
+        font-size: 12px;
+    }
+
+    .edit-comments form textarea {
+        width: 250px;
+    }
+
+    .table>:not(caption)>*>* {
+        padding: 0.6rem .5rem;
+    }
 }
 
 @media only screen and (max-width:400px) {
@@ -854,4 +912,23 @@ button,
         font-size: 12px;
     }
 
+    .logs-pages {
+        -webkit-transform: translateY(8%);
+        -ms-transform: translateY(8%);
+        transform: translateY(8%);
+    }
+
+    .edit-comments form textarea {
+        padding: 15px 5px;
+    }
+
+    .book-card .content-description p {
+        margin-bottom: 95px !important;
+    }
+}
+
+@media only screen and (min-height: 1050px) {
+    #searched-box .row {
+        padding: 5px 0 182px 0;
+    }
 }
