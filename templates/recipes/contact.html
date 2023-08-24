@@ -51,7 +51,6 @@
           onsubmit="return sendMail(this);"
           class="row g-3"
         >
-          <input type="hidden" name="_captcha" value="false" />
           {% csrf_token %}
           <div class="col-md-6">
             <label for="name" class="form-label">Name</label>
@@ -98,9 +97,7 @@
             ></textarea>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary submit-btn">
-              Submit
-            </button>
+            <button type="submit" class="btn btn-primary">Send</button>
           </div>
         </form>
         <!-- end of contact form -->

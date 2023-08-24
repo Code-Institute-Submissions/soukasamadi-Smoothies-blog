@@ -98,9 +98,7 @@ button,
     border: none;
 }
 
-.btn {
-    background-color: var(--interative-color);
-}
+
 
 .bg-setup {
     background-position: center;
@@ -163,6 +161,25 @@ button,
 
 #search-box .btn {
     background: transparent;
+}
+
+.btn {
+    background-color: #427d12;
+    border-color: #427d12;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #0b0c0c;
+    border-color: #0b0c0c;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+.btn-primary:active {
+    background-color: #0b0c0c;
 }
 
 .fa-times,
@@ -524,6 +541,10 @@ button,
 }
 
 .submit-btn:hover {
+    background-color: #0b0c0c;
+}
+
+.submit-btn:active {
     background-color: #0b0c0c;
 }
 
