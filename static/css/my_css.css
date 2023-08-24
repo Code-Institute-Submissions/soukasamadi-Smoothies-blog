@@ -655,7 +655,7 @@ button,
 .logs-pages {
     top: 0;
     left: 0;
-    height: 70vh;
+    margin-top: -100px;
     transform: translateY(20%);
     height: 70vh;
 }
@@ -667,7 +667,13 @@ button,
 }
 
 .signup {
+    margin-top: -100px;
     transform: translateY(25%);
+}
+
+.signup .col-md-8 {
+    padding-bottom: 80px !important;
+    margin-top: -5px !important;
 }
 
 
