@@ -192,7 +192,7 @@ button,
 
 #searched-box .results-empty .info-text {
     line-height: 50px;
-    margin-top: 25%;
+    margin-top: 100%;
     font-size: clamp(1.5rem, 2vw, 2.1rem);
     ;
 }
