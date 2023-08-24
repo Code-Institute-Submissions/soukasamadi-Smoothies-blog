@@ -1,10 +1,7 @@
 {% extends "base.html" %} {% load i18n %} {% block head_title %}{% trans
 "Signup" %}{% endblock %} {% block content %}
 <!-- SIGNUP SECTION -->
-<section
-  class="logs-pages"
-  style="top: 0; left: 0; transform: translateY(25%); height: 70vh"
->
+<section class="logs-pages">
   <div class="container box-shadow">
     <div class="row">
       <div class="col-md-8 mt-3 offset-md-2">
@@ -13,8 +10,13 @@
         <p>
           {% blocktrans %}Welcome back to the code|star blog. Do you already
           have an account? Then please
-          <a class="link" href="{{ login_url }}">sign in</a> instead.{%
-          endblocktrans %}
+          <a
+            class="link"
+            href="{{ login_url }}"
+            aria-label="Go to the sign in page"
+            >sign in</a
+          >
+          instead.{% endblocktrans %}
         </p>
       </div>
     </div>
