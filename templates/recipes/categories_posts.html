@@ -9,10 +9,8 @@
   "
 >
   <div class="sub-hero-content">
-    {% for cat in recipe.categories.all %}
-    <h4 class="hero-center b-bg">Home / Recipes / {{ cat }}</h4>
-    <h1 class="hero-center w-bg w-bg-h1">{{ cat }}</h1>
-    {% endfor %}
+    <h4 class="hero-center b-bg">Home / Recipes / {{ cats }}</h4>
+    <h1 class="hero-center w-bg w-bg-h1">{{ cats }}</h1>
     <p class="hero-center w-bg w-bg-p">
       Discover the best tasting smoothies using a plant-based diet protocol of
       whole foods to nourish the body. From green smoothies to smoothie bowls to
@@ -25,18 +23,15 @@
 
 <!-- CONTENT BLOG SECTION 1-->
 <section id="blog-content-1" class="content">
-  <h2 class="title">
-    Category <br /><span class="color-light">{{ cats }}</span>
-  </h2>
   {% if categories_posts %}
   <div class="container">
     <div class="row">
-      {% for post in categories_posts %} {% if forloop.counter == 2%}
+      {% for recipe in categories_posts %} {% if forloop.counter == 2%}
       <div class="col-md-4">
         <a href="{% url 'recipe_detail' recipe.slug %}">
           <div class="content-box bg-linear-gradient">
             <div class="content-img">
-              <img src="{{ post.featured_image.url }}" alt="" />
+              <img src="{{ recipe.featured_image.url }}" alt="" />
             </div>
             <div class="content-description">
               <h4>{{ recipe.title }}</h4>
@@ -70,7 +65,7 @@
             </div>
             <div class="content-description">
               <h4>{{ recipe.title }}</h4>
-              <p>{{ post.overview | slice:":85"}} . . .</p>
+              <p>{{ recipe.overview | slice:":85"}} . . .</p>
             </div>
             <div class="author-info">
               <span
@@ -111,7 +106,7 @@
   {% if categories_posts %}
   <div class="container">
     <div class="row">
-      {% for post in categories_posts %} {% if forloop.counter == 2%}
+      {% for recipe in categories_posts %} {% if forloop.counter == 2%}
       <div class="col-md-6">
         <a href="{% url 'recipe_detail' recipe.slug %}">
           <div class="content-box bg-linear-gradient">
@@ -121,7 +116,7 @@
             </div>
             <div class="content-description">
               <h4>{{ recipe.title }}</h4>
-              <p>{{ post.overview | slice:":85"}} . . .</p>
+              <p>{{ recipe.overview | slice:":85"}} . . .</p>
             </div>
             <div class="author-info">
               <span
@@ -161,7 +156,7 @@
                   src="{{ recipe.author.author_picture.url }}"
                   alt="{{ recipe.author }} Image"
               /></span>
-              <span>{{ post.author }} | </span>
+              <span>{{ recipe.author }} | </span>
               <span
                 ><i class="fas fa-clock"></i>{{ recipe.timestamp | timesince }}|
               </span>

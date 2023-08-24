@@ -1,13 +1,15 @@
 from django.views import generic, View
-from .models import *
-from django.db.models import Q
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
-from django.http import HttpResponseRedirect
+from .models import *
 from .forms import CommentForm, UserUpdateForm, ProfileUpdateForm
+from django.db.models import Q
+from django.http import HttpResponseRedirect
 from django.shortcuts import (
     render, get_object_or_404, reverse, redirect, resolve_url)
 from django.views.generic import UpdateView
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 def index(request):
@@ -100,7 +102,7 @@ class RecipeLike(View):
 
 def about(request):
     """View to return the about page"""
-    return render(request, 'recipes/about.html', context)
+    return render(request, 'recipes/about.html')
 
 
 def contact(request):
@@ -110,7 +112,7 @@ def contact(request):
 
 def categories(request):
     """View to return the categories page"""
-    return render(request, 'recipes/categories.html', context)
+    return render(request, 'recipes/categories.html')
 
 
 def categories_view(request, cats):
