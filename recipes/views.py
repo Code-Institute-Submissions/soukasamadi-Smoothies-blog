@@ -97,8 +97,10 @@ class RecipeLike(View):
         recipe = get_object_or_404(Recipe, slug=slug)
         if recipe.likes.filter(id=request.user.id).exists():
             recipe.likes.remove(request.user)
+            messages.success(request, f"You have unliked this post.")
         else:
             recipe.likes.add(request.user)
+            messages.success(request, f"You have liked this post, thanks!")
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
 
