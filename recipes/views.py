@@ -150,10 +150,10 @@ def ProfileView(request):
 
 def search(request):
     """search results"""
-    queryset = Post.objects.all()
+    queryset = Recipe.objects.all()
     if request.method == "POST":
         searched = request.POST["searched"]
-        results = Post.objects.filter(
+        results = Recipe.objects.filter(
             Q(title__contains=searched) |
             Q(overview__icontains=searched) |
             Q(content__icontains=searched)
