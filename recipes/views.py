@@ -1,6 +1,7 @@
 from django.views import generic, View
 from .models import *
 from django.db.models import Q
+from django.core.mail import send_mail
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.http import HttpResponseRedirect
@@ -118,7 +119,25 @@ def contact(request):
         'categories_list': categories
     }
 
-    return render(request, 'recipes/contact.html', context)
+    # Get data from the contact form
+    if request.method == 'POST':
+        name = request.POST['name']
+        surname = request.POST['surname']
+        subject = request.POST['subject']
+        email = request.POST['email']
+        message = request.POST['message']
+
+        # Send an email
+        send_mail(
+            subject,
+            message,
+            email,
+            ['pedro.web.test@gmail.com'],
+        )
+        messages.success(request, f"Your email has been sent!")
+        return render(request, 'contact.html', {'name': name})
+    else:
+        return render(request, 'recipes/contact.html', context)
 
 
 def categories(request):
@@ -147,18 +166,18 @@ def categories_view(request, cats):
 def ProfileView(request):
     """View to return the profile page"""
     if request.method == 'POST':
-      user_form = UserUpdateForm(request.POST, instance=request.user)
-      profile_form = ProfileUpdateForm(request.POST,
-                                       request.FILES,
-                                       instance=request.user.profile)
-      if user_form.is_valid() and profile_form.is_valid():
-          user_form.save()
-          profile_form.save()
-          messages.success(request, f"Your account has been updated!")
-          return redirect('profile')
+        user_form = UserUpdateForm(request.POST, instance=request.user)
+        profile_form = ProfileUpdateForm(request.POST,
+                                         request.FILES,
+                                         instance=request.user.profile)
+        if user_form.is_valid() and profile_form.is_valid():
+            user_form.save()
+            profile_form.save()
+            messages.success(request, f"Your account has been updated!")
+            return redirect('profile')
     else:
-      user_form = UserUpdateForm(instance=request.user)
-      profile_form = ProfileUpdateForm(instance=request.user.profile)
+        user_form = UserUpdateForm(instance=request.user)
+        profile_form = ProfileUpdateForm(instance=request.user.profile)
 
     categories = Category.objects.all()
     context = {
