@@ -84,7 +84,6 @@ class RecipeDetail(View):
         )
 
 
-
 class RecipeLike(View):
     """View for post like/Unlike"""
 
@@ -189,5 +188,5 @@ def delete_comment(request, comment_id):
     comment = get_object_or_404(Comment, id=comment_id)
     comment.delete()
     messages.success(request, 'Your comment was deleted successfully')
-    return HttpResponseRedirect(reverse(
+    rn HttpResponseRedirect(reverse(
         'recipe_detail', args=[comment.recipe.slug]))

@@ -527,13 +527,14 @@ button,
     margin-bottom: 50px;
 }
 
-#contatc .email_sent_message {
+#contact .email-sent-message {
     padding: 10px;
     margin-top: 10px;
+    text-align: center;
 }
 
-#contatc .email_sent_message h4 {
-    font-size: clamp(1.2rem, 2vw, 1rem);
+#contact .email-sent-message h4 {
+    font-size: clamp(1.3rem, 2vw, 1rem);
 }
 
 
