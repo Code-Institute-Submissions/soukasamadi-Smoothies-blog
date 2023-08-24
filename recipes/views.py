@@ -83,11 +83,6 @@ class RecipeDetail(View):
             },
         )
 
-    def get_context_data(self, *args, **kwargs):
-        categories_list = Category.objects.all()
-        context = super(RecipeDetail, self).get_context_data(*args, **kwargs)
-        context["categories_list"] = categories_list
-        return context
 
 
 class RecipeLike(View):
@@ -106,48 +101,16 @@ class RecipeLike(View):
 
 def about(request):
     """View to return the about page"""
-    categories = Category.objects.all()
-    context = {
-        'categories_list': categories
-    }
     return render(request, 'recipes/about.html', context)
 
 
 def contact(request):
     """View to return the contact page"""
-    categories = Category.objects.all()
-    context = {
-
-        'categories_list': categories
-    }
-
-    # Get data from the contact form
-    if request.method == 'POST':
-        name = request.POST['name']
-        surname = request.POST['surname']
-        subject = request.POST['subject']
-        email = request.POST['email']
-        message = request.POST['message']
-
-        # Send an email
-        send_mail(
-            subject,
-            message,
-            email,
-            ['pedro.web.test@gmail.com'],
-        )
-        messages.success(request, f"Your email has been sent!")
-        return render(request, 'contact.html', {'name': name})
-    else:
-        return render(request, 'recipes/contact.html', context)
+    return render(request, 'recipes/contact.html')
 
 
 def categories(request):
     """View to return the categories page"""
-    categories = Category.objects.all()
-    context = {
-        'categories_list': categories
-    }
     return render(request, 'recipes/categories.html', context)
 
 
@@ -155,10 +118,6 @@ def categories_view(request, cats):
     """
     Renders the posts filtered by categories
     """
-    categories = Category.objects.all()
-    context = {
-        'categories_list': categories
-    }
     categories_posts = Recipe.objects.filter(
         categories__title__contains=cats, status=1)
     return render(request, 'recipes/categories_posts.html', {
@@ -181,13 +140,11 @@ def ProfileView(request):
         user_form = UserUpdateForm(instance=request.user)
         profile_form = ProfileUpdateForm(instance=request.user.profile)
 
-    categories = Category.objects.all()
     context = {
-        'categories_list': categories,
         'user_form': user_form,
         'profile_form': profile_form,
     }
-    return render(request, 'profile.html', context)
+    return render(request, 'recipes/profile.html', context)
 
 
 def search(request):
@@ -204,11 +161,11 @@ def search(request):
             'queryset': queryset
         }
 
-        return render(request, 'search.html', {
+        return render(request, 'recipes/search.html', {
             'results': results, 'searched': searched})
     else:
 
-        return render(request, 'search.html', context)
+        return render(request, 'recipes/search.html', context)
 
 
 class BlogRecipe(generic.ListView):
