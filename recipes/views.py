@@ -100,7 +100,7 @@ class RecipeLike(View):
 
 def about(request):
     """View to return the about page"""
-    return render(request, 'recipes/about.html', context)
+    return render(request, 'recipes/about.html')
 
 
 def contact(request):
@@ -110,7 +110,7 @@ def contact(request):
 
 def categories(request):
     """View to return the categories page"""
-    return render(request, 'recipes/categories.html', context)
+    return render(request, 'recipes/categories.html')
 
 
 def categories_view(request, cats):
