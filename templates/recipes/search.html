@@ -14,7 +14,10 @@
     </div>
     <div class="searched-results">
       {% for result in results %}
-      <a href="{% url 'recipe_detail' recipe.slug %}">
+      <a
+        href="{% url 'recipe_detail' recipe.slug %}"
+        aria-label="Go to recipe detail page"
+      >
         <div class="row">
           <div class="col-md-6 p-3">
             <h4 class="sub-title">{{ result }}</h4>
