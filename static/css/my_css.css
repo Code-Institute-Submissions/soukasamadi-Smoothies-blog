@@ -567,6 +567,33 @@ button,
     font-weight: 700;
 }
 
+.cat-posts {
+    margin-top: 70px;
+}
+
+.cat-intro {
+    margin-top: 70px;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.cat-intro h1 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cat-intro h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cat-intro p {
+    font-size: 18px;
+}
+
 /*******************************
 *                              *
 *         BLOG PAGE            *
