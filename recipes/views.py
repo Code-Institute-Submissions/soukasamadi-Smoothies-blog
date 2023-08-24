@@ -8,6 +8,7 @@ from django.http import HttpResponseRedirect
 from .forms import CommentForm, UserUpdateForm, ProfileUpdateForm
 from django.shortcuts import (
     render, get_object_or_404, reverse, redirect, resolve_url)
+from django.conf import settings
 
 
 def index(request):
