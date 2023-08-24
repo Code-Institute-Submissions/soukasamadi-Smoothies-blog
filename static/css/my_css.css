@@ -679,6 +679,9 @@ button,
     padding: 5px 15px !important;
 }
 
+.logs-pages .btn-signup {
+    margin-bottom: 20px;
+}
 
 /*******************************
 *                              *

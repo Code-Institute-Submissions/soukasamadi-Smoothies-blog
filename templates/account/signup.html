@@ -1,27 +1,21 @@
 {% extends "base.html" %} {% load i18n %} {% block head_title %}{% trans
 "Signup" %}{% endblock %} {% block content %}
-<!-- SIGNUP SECTION -->
+<!-- LOGOUT SECTION -->
 <section class="logs-pages">
   <div class="container box-shadow">
     <div class="row">
       <div class="col-md-8 mt-3 offset-md-2">
         <h3>{% trans "Sign Up" %}</h3>
-
         <p>
-          {% blocktrans %}Welcome back to the Smoothies blog. Do you already
+          {% blocktrans %}Welcome back to the Smoothies Blog. Do you already
           have an account? Then please
-          <a
-            class="link"
-            href="{{ login_url }}"
-            aria-label="Go to the sign in page"
-            >sign in</a
-          >
-          instead.{% endblocktrans %}
+          <a class="link" href="{{ login_url }}">sign in</a> instead.{%
+          endblocktrans %}
         </p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8 mt-3 offset-md-2 pb-5">
+      <div class="col-md-8 mt-3 offset-md-2">
         <form
           class="signup"
           id="signup_form"
@@ -43,6 +37,5 @@
     </div>
   </div>
 </section>
-<!-- END OD SIGNUP SECTION -->
-
+<!-- LOGOUT SECTION -->
 {% endblock %}
