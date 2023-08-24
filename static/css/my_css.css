@@ -44,6 +44,10 @@ html {
     margin-bottom: 25px;
 }
 
+.color-trans {
+    color: transparent;
+}
+
 .info-text {
     font-size: clamp(1.8rem, 2vw, 2.1rem);
     text-align: center;
