@@ -1,17 +1,17 @@
 {% extends "base.html" %} {% load i18n %} {% load account socialaccount %} {%
-block head_title %}{% trans "Sign In" %}{% endblock %} {% block content %}
-<!-- LOGIN SECTION -->
-<section class="logs-pages">
-  <div class="container box-shadow">
-    <div class="row align-items-center">
-      <div class="col-md-6 mt-5 offset-md-2">
-        <h3>{% trans "Sign In" %}</h3>
+block head_title %}{% trans "Sign In" %}{% block content %}
 
-        <p>
-          {% blocktrans %}Welcome back to the Smoothies Blog. To leave a comment
-          or like a post, please log in. If you have not created an account yet,
-          then <a class="link" href="{{ signup_url }}">sign up</a> first.{%
-          endblocktrans %}
+<!-- LOGIN SECTION -->
+<section class="logs-pages center-logs">
+  <div class="container">
+    <div class="row align-items-center">
+      <div>
+        <h3 class="sign-in">{% trans "Sign In" %}</h3>
+
+        <p class="sign-in logs-p">
+          Welcome back to the Smoothies Blog. To leave a comment or like a post,
+          please log in. If you have not created an account yet, then
+          <a class="link link-logs" href="{{ signup_url }}">sign up</a> first.
         </p>
       </div>
     </div>
@@ -34,4 +34,4 @@ block head_title %}{% trans "Sign In" %}{% endblock %} {% block content %}
   </div>
 </section>
 <!-- END OF LOGIN SECTION -->
-{% endblock %}
+{% endblock content %}

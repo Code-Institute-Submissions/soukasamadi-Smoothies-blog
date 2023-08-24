@@ -60,7 +60,7 @@ html {
     padding: 25px;
     font-size: clamp(1.2rem, 2vw, 1.3rem);
     font-weight: 700;
-    color: var(--text-color-light);
+    color: #0b0c0c;
 }
 
 .text-justify {
@@ -123,6 +123,13 @@ button,
     margin-top: 50px;
 }
 
+a {
+    color: #0b0c0c;
+}
+
+a:hover {
+    color: #427d12;
+}
 
 
 /*******************************
@@ -741,6 +748,29 @@ body.modal-open {
 
 .logs-pages .btn-signup {
     margin-bottom: 20px;
+}
+
+.center-logs {
+    padding-top: 50px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logs-p {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.sign-in {
+    text-align: center;
+}
+
+.link-logs {
+    color: #427d12;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 /*******************************
