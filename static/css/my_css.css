@@ -722,6 +722,10 @@ button,
         box-shadow: rgb(1 1 1 / 50%) 1px 10px 10px -1px;
     }
 
+    .login-items {
+        bottom: -8px !important;
+    }
+
 
     .login-box {
         position: absolute;
