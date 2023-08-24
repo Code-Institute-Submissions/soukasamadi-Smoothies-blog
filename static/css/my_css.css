@@ -656,29 +656,21 @@ button,
 *         LOGIN PAGES          *
 *                              *
 *******************************/
-
 .logs-pages {
-    top: 0;
-    left: 0;
-    margin-top: -100px;
+    margin-bottom: 250px;
+    margin-top: 50px;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
     transform: translateY(20%);
-    height: 70vh;
+}
+
+.logs-pages .btn-signup {
+    margin-bottom: 20px;
 }
 
 .log-out {
-    transform: translateY(50%);
     height: 60vh;
-    margin-bottom: 120px;
-}
-
-.signup {
-    margin-top: -100px;
-    transform: translateY(25%);
-}
-
-.signup .col-md-8 {
-    padding-bottom: 80px !important;
-    margin-top: -5px !important;
+    margin-bottom: 80px;
 }
 
 .logs-pages input {
