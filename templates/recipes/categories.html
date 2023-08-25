@@ -25,19 +25,19 @@
 <!-- CATEGORIES SECTION -->
 <section id="content" class="content content-categories">
   <h2 class="title">ALL RECIPES</h2>
-  <div class="container box-shadow">
+  <div class="container">
     <div class="row">
       {{ cats }} {% for category in categories_list %}
       <div class="col-md-4">
         <a href="{% url 'categories_posts' category.title %}">
-          <div class="content-img">
-            <div class="overlay"></div>
+          <div class="content-img" style="margin-bottom: 50px;">
+            <div ></div>
             <img
               src="{{ category.category_image.url}}"
               alt=" {{ category.title }} Image"
             />
             <div class="content-categorie content-categorie-center">
-              <h3>{{ category.title}}</h3>
+              <h3 style="margin-top: 30px;">{{ category.title}}</h3>
             </div>
           </div>
         </a>

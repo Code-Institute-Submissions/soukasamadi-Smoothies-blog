@@ -604,9 +604,10 @@ a:hover {
 
 }
 
-.content-categories h3 {
+.content-categorie-h3 {
     letter-spacing: 2px;
     font-weight: 700;
+    margin-top: 10px;
 }
 
 .cat-posts {
@@ -634,6 +635,10 @@ a:hover {
 
 .cat-intro p {
     font-size: 18px;
+}
+
+.content-img img:hover{
+    opacity: 0.5;
 }
 
 /*******************************
