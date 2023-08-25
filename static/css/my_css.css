@@ -109,11 +109,6 @@ button,
 
 }
 
-
-.bg-linear-gradient {
-    background: linear-gradient(50deg, #1a1b1c, #171617, rgb(15, 15, 15));
-}
-
 .box-shadow {
     box-shadow: rgb(1 1 1 / 20%) 1px 10px 10px -1px;
 }
@@ -981,7 +976,37 @@ body.modal-open {
     .book-card .content-description p {
         margin-bottom: 75px !important;
     }
+
+    .sub-hero-content {
+    
+        top: 0; 
+        left: 0; 
+        transform: none;
+        width: auto;
+    }
+
+    .sub-hero-content {
+    top: 100px;
+    left: 0;
+    transform: none;
+    width: auto;
+    }
+    
+    .grid-container-element-footer {
+    display: block;
+    }
+
+    .social-media {
+    text-align: center;
+    }
+
+    .col-6 {
+        width: auto;
+    }
+
 }
+
+
 
 @media only screen and (max-width: 600px) {
     .carousel-caption {
