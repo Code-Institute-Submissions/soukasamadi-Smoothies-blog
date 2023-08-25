@@ -832,6 +832,62 @@ body.modal-open {
 }
 
 
+/*******************************
+*                              *
+*          challenge PAGE      *
+*                              *
+*******************************/
+.challenge-content .sub-title {
+    font-size: clamp(1.5rem, 2vw, 2.2rem);
+    margin: -25px 0 25px;
+}
+
+.challenge-card {
+    -webkit-box-shadow: rgb(1 1 1 / 50%) 1px 10px 10px -1px;
+    box-shadow: rgb(1 1 1 / 50%) 1px 10px 10px -1px;
+    padding: 15px;
+    margin-bottom: 25px;
+    height: 700px;
+}
+
+.challenge-content .title {
+    margin-bottom: -10px;
+}
+
+.challenge-card img {
+    height: 250px !important;
+    width: 60% !important;
+    margin: 0 auto;
+}
+
+.challenge-card .content-img {
+    position: relative;
+    margin-bottom: 15px;
+    background: rgb(199, 235, 240);
+    padding: 20px 0 10px;
+    border-radius: 5px;
+}
+
+.challenge-card .content-description p {
+    margin-bottom: 110px !important; 
+}
+
+.fa-circle-check {
+    color: rgb(19, 169, 74) !important;
+    font-size: 40px;
+    left: 0;
+    bottom: -15px;
+    position: absolute;
+}
+
+.challenge{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
 
 
 
