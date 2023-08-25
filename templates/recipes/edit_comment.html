@@ -1,10 +1,10 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
 <!-- UPDATE COMMENT SECTION -->
-<div class="edit-comments container box-shadow">
+<div class="edit-comments container">
   <div class="row">
     <div class="col-12 text-center">
-      <h1 class="title">Edit Comment</h1>
+      <h1 class="title">Edit your Comment</h1>
       <p>Edit comment as: {{ user.username | slice:":10" }}</p>
       {% if user.profile.image %}
       <img
