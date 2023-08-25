@@ -843,7 +843,7 @@ body.modal-open {
 *                              *
 *******************************/
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-    .book-card .content-description p {
+    .challenge-card .content-description p {
         margin-bottom: 130px !important;
     }
 }
@@ -858,7 +858,7 @@ body.modal-open {
         height: auto !important;
     }
 
-    .navbar-light .navbar-toggler {
+    .navbar-light .navbar-toggler {   
         padding: 5px 6px 5px 13px;
     }
 
@@ -875,13 +875,13 @@ body.modal-open {
     }
 
     #blog-content-1,
-    #books-content-1,
+    #challenge-content-1,
     #home-content-1 {
         display: none;
     }
 
     #blog-content-2,
-    #books-content-2,
+    #challenge-content-2,
     #home-content-2 {
         display: block !important;
     }
@@ -976,7 +976,7 @@ body.modal-open {
         padding: 6px;
     }
 
-    .book-card .content-description p {
+    .challenge-card .content-description p {
         margin-bottom: 75px !important;
     }
 
@@ -1095,7 +1095,7 @@ body.modal-open {
         padding: 15px 5px;
     }
 
-    .book-card .content-description p {
+    .challenge-card .content-description p {
         margin-bottom: 95px !important;
     }
 }
