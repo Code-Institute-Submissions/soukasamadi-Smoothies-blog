@@ -18,7 +18,7 @@ class Profile(models.Model):
     image = CloudinaryField('image')
 
     def __str__(self):
-        return f'{self.user.username} Profile'
+        return f'{self.user.username}  Profile'
 
 
 class Category(models.Model):
@@ -80,7 +80,7 @@ class Recipe(models.Model):
         return self.likes.count()
 
     def get_absolute_url(self):
-        return reverse('post_detail', kwargs={
+        return reverse('recipe_detail', kwargs={
             'id': self.id
         })
 
@@ -102,3 +102,7 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
+
+    def get_absolute_url(self):
+        """Sets absolute URL"""
+        return reverse('recipe_detail', args=[self.recipe.slug])
