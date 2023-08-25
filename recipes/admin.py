@@ -53,4 +53,4 @@ class ProfileAdmin(admin.ModelAdmin):
     """
     Add fields for profile in admin panel
     """
-    list_display = ('user', 'image')
+    list_display = ('user',)
