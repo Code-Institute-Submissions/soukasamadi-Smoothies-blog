@@ -9,16 +9,18 @@
         <h3 class="sign-in">{% trans "Sign In" %}</h3>
 
         <p class="sign-in logs-p">
-          Welcome back to the Smoothies Blog. To leave a comment or like a post,
-          please log in. If you have not created an account yet, then
+          {% blocktrans %} Welcome back to the Smoothies Blog. To leave a
+          comment or like a post, please log in. If you have not created an
+          account yet, then
           <a class="link link-logs" href="{{ signup_url }}">sign up</a> first.
+          {% endblocktrans %}
         </p>
       </div>
     </div>
     <div class="row align-items-center">
       <div class="col-md-8 mt-3 offset-md-2 pb-5">
         <form class="login" method="POST" action="{% url 'account_login' %}">
-          {% csrf_token %} {{ form.as_p }} {% if redirect_field_value %}
+        {% csrf_token %} {{ form.as_p }} {% if redirect_field_value %}
           <input
             type="hidden"
             name="{{ redirect_field_name }}"

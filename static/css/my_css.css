@@ -736,13 +736,12 @@ body.modal-open {
 }
 
 .log-out {
-    height: 60vh;
+    height: 40vh;
     margin-bottom: 80px;
 }
 
 .logs-pages input {
     text-align: center;
-    border-radius: 15px !important;
     padding: 5px 15px !important;
 }
 
@@ -763,6 +762,8 @@ body.modal-open {
     margin-left: 20%;
 }
 
+
+
 .sign-in {
     text-align: center;
 }
@@ -771,6 +772,20 @@ body.modal-open {
     color: #427d12;
     font-weight: 700;
     font-size: 20px;
+}
+
+.btn-signup {
+    color: weight;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+
+.btn {
+    color: #fff;
+}
+
+.btn:hover {
+    color: #fff;
 }
 
 /*******************************
