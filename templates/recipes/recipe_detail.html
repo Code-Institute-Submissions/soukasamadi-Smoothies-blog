@@ -76,24 +76,29 @@
             </div>
             <div class="post-comments">
                 <hr class="hr-small">
-                <div class="comment-form">
-                    <hr class="hr-small">
-                    {% if commented %}
-                    <div class="alert alert-success" role="alert">
-                        Thanks {{ user.username }}. Your comment is awaiting approval!
+                    <div class="comment-form">
+                        <hr class="hr-small">
+                        {% if commented %}
+                        <div class="alert alert-success" role="alert">
+                            Thanks {{ user.username }}. Your comment is awaiting approval!
+                        </div>
+                        {% else %}
+                        {% if user.is_authenticated %}
+                        <h4>Leave a Comment</h4>
+                        <p>Posting as: {{ user.username | slice:":10"}}</p>
+                        {% if user.profile.image %}
+                        <img class="author-img" src="{{ user.profile.image.url }}" alt="User Image">
+                        {% else %}
+                        <img class="author-img" src="{% static 'images/small-img/user_profile_placeholder.jpg' %}" alt="User Image">
+                        {% endif %}
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ comment_form | crispy }}
+                            <button type="submit" class="btn btn-signup btn-lg mt-5 mb-5">Submit</button>
+                        </form>
+                        {% endif %}
+                        {% endif %}
                     </div>
-                    {% else %}
-                    {% if user.is_authenticated %}
-                    <h4>Leave a Comment</h4>
-                    <p>Posting as: {{ user.username }}</p>
-                    <form action="" method="post">
-                        {{ comment_form | crispy }}
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-signup btn-lg mt-5 mb-5">Submit</button>
-                    </form>
-                    {% endif %}
-                    {% endif %}
-                </div>
                 <h4>Comments:</h4>
                 <span class="text-secondary"><i class="far fa-comments"></i>{{ num_comments }}</span>
                 {% for comment in comments %}
