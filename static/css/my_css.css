@@ -162,7 +162,7 @@ a:hover {
 }
 
 #search-box .search-nav img {
-    width: 200px;
+    width: 150px;
     left: 25px;
 }
 
@@ -172,26 +172,36 @@ a:hover {
 
 .btn {
     background-color: #427d12;
-    border-color: #427d12;
 }
 
 .btn:hover,
 .btn:active {
-    background-color: #0b0c0c;
-    border-color: #0b0c0c;
+   background-color: #0b0c0c;
 }
 
 .btn-primary {
     width: 100%;
+    border: none;
 }
 
 .btn-primary:active {
     background-color: #0b0c0c;
+    border: none;
 }
 
 .fa-times,
 .fa-search {
     font-size: 1.5rem;
+
+}
+
+.fa-search:hover {
+    color: #0b0c0c;
+    border: none;
+}
+
+.fa-search:active{
+    color: #0b0c0c;
 }
 
 
