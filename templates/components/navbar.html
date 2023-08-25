@@ -124,6 +124,11 @@
             >Contact</a
           >
         </li>
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+            <a class="nav-link active" href="{% url 'challenge' %}" aria-label="Go to the challenge page">Challenge</a>
+        </li>
+        {% endif %}
       </ul>
       {% if user.is_authenticated %}
       <ul class="d-flex login-box">
