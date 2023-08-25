@@ -243,6 +243,10 @@ a:hover {
     background: rgb(228, 228, 228);
 }
 
+.no-result{
+    text-align: center;
+}
+
 /*******************************
 *                              *
 *          NAVBAR              *
