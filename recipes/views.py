@@ -125,17 +125,19 @@ def categories_view(request, cats):
         'cats': cats.title(), 'categories_posts': categories_posts})
 
 
-def ProfileView(request):
-    """View to return the profile page"""
+@login_required
+def profile_view(request):
+    """
+    Renders the profile page
+    """
     if request.method == 'POST':
         user_form = UserUpdateForm(request.POST, instance=request.user)
-        profile_form = ProfileUpdateForm(request.POST,
-                                         request.FILES,
-                                         instance=request.user.profile)
+        profile_form = ProfileUpdateForm(
+            request.POST, request.FILES, instance=request.user.profile)
         if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
             profile_form.save()
-            messages.success(request, f"Your account has been updated!")
+            messages.success(request, 'Your account has been updated!')
             return redirect('profile')
     else:
         user_form = UserUpdateForm(instance=request.user)
