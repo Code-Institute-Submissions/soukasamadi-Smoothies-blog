@@ -127,8 +127,8 @@
 </section>
 <!-- END OF HERO SECTION -->
 <!-- CONTENT SECTION -->
-<section id="content" class="content">
-  <h2 class="title">Our Recepies</h2>
+<section id="home-content-1" class="content">
+  <h2 class="title">Our Latest Recepies</h2>
   <div class="container">
     <div class="row row-reverse">
       {% for recipe in recipe_list %} {% if forloop.counter == 1 %}
@@ -203,6 +203,50 @@
     </div>
   </div>
 </section>
+
+<!-- CONTENT SECTION 2 (UNDER 991px)-->
+<section id="home-content-2" class="content">
+    <h2 class="title">Our  Latest Recepies</h2>
+    <div class="container">
+      <div class="row">
+        {% for recipe in recipe_list %} {% if forloop.counter == 2 %}
+        <div class="col-md-6">
+          <a
+            href="{% url 'recipe_detail' recipe.slug %}"
+            aria-label="Go to the recipe detail page"
+          >
+            <div class="content-img">
+              <img
+                src="{{ recipe.featured_image.url }}"
+                alt="{{ recipe.title }} Image"
+              />
+              <div class="content-categorie">
+                <h4>{{ recipe.title }}</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        {% else %}
+        <div class="col-md-6">
+          <a
+            href="{% url 'recipe_detail' recipe.slug %}"
+            aria-label="Go to the recipe detail page"
+          >
+            <div class="content-img">
+              <img
+                src="{{ recipe.featured_image.url }}"
+                alt="{{ recipe.title }} Image"
+              />
+              <div class="content-categorie">
+                <h4>{{ recipe.title }}</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        {% endif %} {% endfor %}
+      </div>
+    </div>
+  </section>
 <!-- CONTENT SECTION -->
 
 {% endblock content %}

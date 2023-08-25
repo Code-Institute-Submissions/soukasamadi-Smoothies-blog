@@ -1,7 +1,7 @@
 /*******************************
 *                              *
 *        GOOGLE FONTS          *
-*                              *
+*                              *  home-content-1
 *******************************/
 
 /*Josefin Sans*/
@@ -288,7 +288,7 @@ a:hover {
 }
 
 .navbar-brand {
-    margin-right: -180px !important;
+    margin-right: -100px !important;
 }
 
 .navbar-brand img {
@@ -658,7 +658,8 @@ a:hover {
     width: 100%;
 }
 
-#blog-content-2 {
+#blog-content-2,
+#home-content-2 {
     display: none;
 }
 
@@ -874,12 +875,14 @@ body.modal-open {
     }
 
     #blog-content-1,
-    #books-content-1 {
+    #books-content-1,
+    #home-content-1 {
         display: none;
     }
 
     #blog-content-2,
-    #books-content-2 {
+    #books-content-2,
+    #home-content-2 {
         display: block !important;
     }
 
@@ -1003,6 +1006,8 @@ body.modal-open {
     .col-6 {
         width: auto;
     }
+    
+
 
 }
 
