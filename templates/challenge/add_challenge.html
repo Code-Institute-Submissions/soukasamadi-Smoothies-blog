@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- ADD/UPDATE challenge SECTION -->
+<div id="add_challenge" class="edit-comments">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                {% if challenge %}
+                <h1 class="title mt-70">Edit challenge</h1>
+                <p>Edit challenge as: {{ user.username | slice:":10" }}</p>
+                {% else %}
+                <h1 class="title mt-70">Share your Experience !</h1>
+                <p>Add challenge as: {{ user.username | slice:":10" }}</p>
+                {% endif %}
+                {% if user.profile.image %}
+                <img class="author-img mb-4" src="{{ user.profile.image.url }}" alt="User Image">
+                {% else %}
+                <img class="author-img mb-4" src="{% static 'images/user_profile_placeholder.jpg' %}"
+                    alt="User Image">
+                {% endif %}
+            </div>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <table class="w-50 table">
+                    {% for field in form %}
+                    <tr>
+                        <th>{{field.label}}</th>
+                        <td>{{ field }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <div class="text-center">
+                    <button class="btn btn-secondary right mb-4" type="submit" value="Save">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- END ADD/UPDATE challenge SECTION  -->
+
+{% endblock content %}
