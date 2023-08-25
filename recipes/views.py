@@ -90,14 +90,14 @@ class RecipeDetail(View):
 class RecipeLike(View):
     """View for post like/Unlike"""
 
-    def recipe(self, request, slug, *args, **kwargs):
-        recipe = get_object_or_404(Recipe, slug=slug)
-        if recipe.likes.filter(id=request.user.id).exists():
-            recipe.likes.remove(request.user)
-            messages.success(request, f"You have unliked this post.")
+    def post(self, request, slug, *args, **kwargs):
+        post = get_object_or_404(Recipe, slug=slug)
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+            messages.success(request, 'You have unliked this post.')
         else:
-            recipe.likes.add(request.user)
-            messages.success(request, f"You have liked this post, thanks!")
+            post.likes.add(request.user)
+            messages.success(request, 'You have liked this post, thanks!')
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
 
@@ -188,18 +188,23 @@ class BlogRecipe(generic.ListView):
         return context
 
 
+@login_required
 def delete_comment(request, comment_id):
-    """Delete comment"""
+    """
+    Delete comment
+    """
     comment = get_object_or_404(Comment, id=comment_id)
     comment.delete()
-    messages.success(request, 'Your comment was deleted successfully')
+    messages.success(request, 'The comment was deleted successfully')
     return HttpResponseRedirect(reverse(
         'recipe_detail', args=[comment.recipe.slug]))
 
 
-class EditComment(SuccessMessageMixin, UpdateView):
-    """Edite comment"""
+class EditComment(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+    """
+    Edit comment
+    """
     model = Comment
-    template_name = 'edit_comment.html'
+    template_name = 'recipes/edit_comment.html'
     form_class = CommentForm
     success_message = 'The comment was successfully updated'

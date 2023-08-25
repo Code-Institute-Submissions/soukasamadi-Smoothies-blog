@@ -9,8 +9,8 @@ from .views import *
 
 """url paths"""
 urlpatterns = [
-    path('delete_comment/<int:comment_id>',
-         views.delete_comment, name='delete_comment'),
+    path('delete_comment/<int:comment_id>', views.delete_comment,
+         name='delete_comment'),
     path('edit_comment/<int:pk>', views.EditComment.as_view(),
          name='edit_comment'),
     path('', views.index, name="index"),
