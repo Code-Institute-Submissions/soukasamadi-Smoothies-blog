@@ -659,6 +659,7 @@ a:hover {
 }
 
 #blog-content-2,
+#challenge-content-2,
 #home-content-2 {
     display: none;
 }
@@ -880,11 +881,21 @@ body.modal-open {
     position: absolute;
 }
 
-.challenge{
+.intro-challenge{
     margin-top: 50px;
     margin-bottom: 20px;
     text-align: center;
 }
+
+.intro-challenge-1 {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.intro-challenge .text-center{
+    margin-top: 20px;
+}
+
 
 
 
