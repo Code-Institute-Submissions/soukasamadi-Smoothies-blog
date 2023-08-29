@@ -5,6 +5,7 @@
 *******************************/
 /*Josefin Sans*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
 /*******************************
 *                              *
 *        GENERAL STYLES        *
@@ -107,6 +108,7 @@ a {
 a:hover {
     color: #427d12;
 }
+
 /*******************************
 *                              *
 *          SEARCH BOX          *
@@ -215,8 +217,8 @@ a:hover {
     position: fixed;
     background: -o-linear-gradient(350deg, #0b0c0c, #121213, #0b0c0c);
     background: linear-gradient(100deg, #0b0c0c, #0d0d0d, #0b0c0c);
-    -webkit-box-shadow: rgb(1 1 1 / 50%) 1px 10px 10px -1px;
-    box-shadow: rgb(1 1 1 / 50%) 1px 10px 10px -1px;
+    -webkit-box-shadow: rgba(228, 227, 227, 0.5) 1px 10px 10px -1px;
+    box-shadow: rgba(196, 194, 194, 0.5) 1px 10px 10px -1px;
     height: 60px;
 }
 .nav-link.nav-active {
@@ -242,6 +244,8 @@ a:hover {
 }
 .navbar-brand img {
     width: 50%;
+    margin-right: 60px;
+    margin-bottom: 15px;
 }
 .navbar-brand img.nav-active {
     width: 48%;
@@ -744,6 +748,11 @@ body.modal-open {
     }
     .content-description h4 {
         margin-top: 15px;
+    }
+
+    .navbar-brand img {
+        margin-right: auto;
+        margin-bottom: auto;
     }
 }
 @media only screen and (max-width: 767px) {
