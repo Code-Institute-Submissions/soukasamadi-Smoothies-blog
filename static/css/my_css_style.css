@@ -3,6 +3,7 @@
 *        GOOGLE FONTS          *
 *                              *
 *******************************/
+
 /*Josefin Sans*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
 
@@ -92,9 +93,7 @@ button,
     transition: none;
     z-index: 1;
 }
-.bg-linear-gradient {
-    background: linear-gradient(50deg, #1a1b1c, #171617, rgb(15, 15, 15));
-}
+
 .box-shadow {
     box-shadow: rgb(1 1 1 / 20%) 1px 10px 10px -1px;
 }
