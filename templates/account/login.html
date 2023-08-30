@@ -1,7 +1,15 @@
 {% extends "base.html" %} {% load i18n %} {% load account socialaccount %} 
-{% block head_title %} {% trans "Sign In" %} {% endblock %} {% block content %}
+{% block head_title %} {% load crispy_forms_tags %} {% trans "Sign In" %} {% endblock %} {% block content %}
 
 <!-- LOGIN SECTION -->
+<div
+  class="hero-bg-setup-logs"
+  style="
+    background-image: url(https://simplegreensmoothies.com/wp-content/uploads/pre-workout-smoothie-plant-based-healthy-5-1200x801.jpg);
+    height: 100vh;
+    opacity: 0.7;
+  "
+>
 <section class="logs-pages center-logs">
   <div class="container">
     <div class="row align-items-center">
@@ -20,7 +28,7 @@
     <div class="row align-items-center">
       <div class="col-md-8 mt-3 offset-md-2 pb-5">
         <form class="login" method="POST" action="{% url 'account_login' %}">
-        {% csrf_token %} {{ form.as_p }} {% if redirect_field_value %}
+        {% csrf_token %} {{ form | crispy }} {% if redirect_field_value %}
           <input
             type="hidden"
             name="{{ redirect_field_name }}"
