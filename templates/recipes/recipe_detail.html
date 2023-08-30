@@ -68,9 +68,6 @@
                         <span><i class="fas fa-clock"></i> {{ recipe.time_to_prepar }} Minutes</span>
                     </div>
             </div>
-            <div class="post-text-content mt-3">
-                <h4>{{ recipe.overview }}</h4>
-            </div>
             <div class="ingredients-box mt-3">
                 {{ recipe.content | safe }}
             </div>
@@ -139,7 +136,6 @@
                     </div>
                 </div>
                 {% endif %}
-                <hr class="hr-small">
                 {% endfor %}   
             </div>
         </div>

@@ -823,7 +823,9 @@ body.modal-open {
     .carousel-caption {
         top: 50%;
         width: 80%;
+        height: 65vh;
     }
+
     .hr-small {
         width: 90%;
         margin: 25px auto;
@@ -852,6 +854,13 @@ body.modal-open {
     }
     .main-bg-desktop {
         display: none;
+    }
+    .sub-hero-content{
+        width: 90%;
+    }
+
+    .cat-intro h2{
+        font-size: 30px;
     }
 }
 @media only screen and (max-width: 500px) {
