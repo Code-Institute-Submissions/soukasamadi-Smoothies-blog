@@ -179,7 +179,7 @@ a:hover {
 #searched-box .info-text {
     margin-top: 5%;
 }
-#searched-box .row {
+#searched-box .row {   
     padding: 25px;
 }
 #searched-box img {
@@ -231,7 +231,7 @@ a:hover {
 .login-box {
     margin-top: 20px;
 }
-.login-box .author-img {
+.login-box .author-img {  
     width: 30px;
     height: 30px;
     margin-top: 8px;
@@ -558,7 +558,9 @@ p.nav-link.welcome-nav{
     height: 40vh;
     width: 100%;
 }
-#blog-content-2 {
+#blog-content-2,
+#chal-content-2,
+#home-content-2 {   
     display: none;
 }
 
@@ -728,11 +730,13 @@ body.modal-open {
         bottom: 5px;
     }
     #blog-content-1,
-    #books-content-1 {
+    #home-content-1,
+    #chal-content-1 {
         display: none;
     }
     #blog-content-2,
-    #books-content-2 {
+    #home-content-2,
+    #chal-content-2 {
         display: block !important;
     }
     #post-content .post-content-img {
