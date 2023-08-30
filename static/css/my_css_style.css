@@ -244,7 +244,7 @@ a:hover {
 }
 .navbar-brand img {
     width: 50%;
-    margin-right: 60px;
+    margin-right: 100px;
     margin-bottom: 15px;
 }
 .navbar-brand img.nav-active {
@@ -256,6 +256,14 @@ a:hover {
 #alert-box .containar .col-md-8 {
     margin-top: 50px;
 }
+
+p.nav-link.welcome-nav{
+    margin-top: 15px;
+    margin-left: -25px;
+}
+
+
+
 /*******************************
 *                              *
 *        HERO SECTION          *

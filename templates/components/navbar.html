@@ -133,37 +133,68 @@
       {% if user.is_authenticated %}
       <ul class="d-flex login-box">
         <!-- User authentication -->
+        <li class="nav-item dropdown">
+            {% if user.profile.image %}
+            <a
+              class="nav-link  active"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+                <img
+                class="author-img"
+                src="{{ user.profile.image.url }}"
+                alt="{{ user.username }} Image"/>
+                  
+            </a>
+            {% else %}
+            <a
+              class="nav-link  active"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+                <img
+                    class="author-img"
+                    src="{% static 'images/user_profile_placeholder.jpg' %}"
+                    alt="User Image"
+                />
+            </a>
+            {% endif %}
+            <ul class="dropdown-menu dropdown-menu-profile" aria-labelledby="navbarDropdown">
+                <li>
+                    <a
+                      class="dropdown-item"
+                      href="/profile"
+                      aria-label="Go to the profile page"
+                      >Profile</a
+                    >
+                  </li> 
+                <li>
+                    <a
+                    class="dropdown-item"
+                    href="/favorite"
+                    aria-label="Go to the favorite page"
+                    >My Favorites</a
+                    >
+                </li>
+                <li>
+                    <a
+                    class="dropdown-item"
+                    href="{% url 'account_logout' %}"
+                    aria-label="Go to the logout page"
+                    >Logout</a
+                    >
+                </li>
+            </ul>
+        </li>       
         <li class="nav-item display-inline"></li>
         <li>
-          <a href="/profile">
-            <p class="nav-link">welcome, {{user.username | slice:":10" }} !</p>
-          </a>
-        </li>
-        {% if user.profile.image %}
-        <li>
-          <img
-            class="author-img"
-            src="{{ user.profile.image.url }}"
-            alt="{{ user.username }} Image"
-          />
-        </li>
-        {% else %}
-        <li>
-          <img
-            class="author-img"
-            src="{% static 'images/user_profile_placeholder.jpg' %}"
-            alt="User Image"
-          />
-        </li>
-        {% endif %}
-        <li>
-          <a
-            class="nav-link test-center"
-            href="{% url 'account_logout' %}"
-            aria-label="Go to the logout page"
-          >
-            Logout</a
-          >
+        <a href="/profile">
+            <p class="nav-link welcome-nav">welcome, {{user.username | slice:":10" }} !</p>
+        </a>
         </li>
       </ul>
       {% else %}
