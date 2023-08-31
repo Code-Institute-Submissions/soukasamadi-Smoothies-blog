@@ -69,8 +69,6 @@ class Recipe(models.Model):
     likes = models.ManyToManyField(
         User, related_name='blogpost_like', blank=True)
     featured = models.BooleanField()
-    favorite = models.ManyToManyField(
-        User, related_name='favorite', default=None, blank=True)
 
     class Meta:
         ordering = ["-timestamp"]

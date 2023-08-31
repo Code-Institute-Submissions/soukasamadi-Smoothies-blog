@@ -207,14 +207,4 @@ class EditComment(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Comment
     template_name = 'recipes/edit_comment.html'
     form_class = CommentForm
-    success_message = 'The comment was successfully updated'
-
-
-@login_required
-def favourite_add(request, id):
-    recipe = get_object_or_404(Recipe, id=id)
-    if recipe.favourites.filter(id=request.user.id).exists():
-        recipe.favourites.remove(request.user)
-    else:
-        recipe.favourites.add(request.user)
-    return HttpResponseRedirect(request.META['HTTP_REFERER'])        
+    success_message = 'The comment was successfully updated'       
