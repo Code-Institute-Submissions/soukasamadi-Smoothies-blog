@@ -397,6 +397,7 @@ p.nav-link.welcome-nav{
 *                              *
 *******************************/
 #footer {
+    margin-top: 50px;
     position: relative;
     padding: 25px;
     background-color: black;
@@ -430,6 +431,8 @@ p.nav-link.welcome-nav{
     font-size: 0.9rem;
 }
 #footer .footer-text {
+    margin-top: 20px;
+    padding-top: 10px;
     width: 80%;
     font-size: clamp(0.8rem, 2vw, 0.9rem)
 }
@@ -631,6 +634,7 @@ body.modal-open {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: -50px;
 }
 
 .logs-pages {
@@ -747,16 +751,13 @@ body.modal-open {
 }
 
 .challenge-card img {
-    height: 250px !important;
-    width: 60% !important;
+    height: 300px !important;
     margin: 0 auto;
 }
 
 .challenge-card .content-img {
     position: relative;
     margin-bottom: 15px;
-    background: rgb(199, 235, 240);
-    padding: 20px 0 10px;
     border-radius: 5px;
 }
 
@@ -955,6 +956,20 @@ body.modal-open {
 
     .cat-intro h2{
         font-size: 30px;
+    }
+
+    .grid-container-element-footer{
+        display: block;
+
+    }
+
+    #footer .copyright {
+        width: 100%;
+    }
+
+    .social-media {
+        text-align: center;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 500px) {
