@@ -262,6 +262,11 @@ p.nav-link.welcome-nav{
     margin-left: -25px;
 }
 
+a.dropdown-item.coming-soon{
+    color: grey;
+}
+
+
 
 
 /*******************************
