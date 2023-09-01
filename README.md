@@ -74,3 +74,16 @@ All functionality and development of this project were managed using GitHub whic
 
 * All the imagery is related to the recipes and website design.
 The remaining imagery will be uploaded by the author to the database.
+
+
+### Wireframes
+
+I craeted a couple of wireframe to get a close idea about how the wesbite will look like.
+[wirframe 1](.assets/readme/wireframes/wireframe2)
+[wirframe 1](.assets/readme/wireframes/wireframe1)
+[wirframe 1](.assets/readme/wireframes/wireframe3)
+
+
+## Database Diagram
+
+![Database Diagrama](./assets/readme/Simple_Smoothies_DataBase_Diagram.png)<br>
