@@ -79,9 +79,9 @@ The remaining imagery will be uploaded by the author to the database.
 ### Wireframes
 
 I craeted a couple of wireframe to get a close idea about how the wesbite will look like.
-![wirframe 1](.assets/readme/wireframes/wireframe2.jpg)
-![wirframe 1](.assets/readme/wireframes/wireframe1.jpg)
-![wirframe 1](.assets/readme/wireframes/wireframe3.jpg)
+![wirframe 1](./assets/readme/wireframes/wireframe2.jpg)
+![wirframe 2](./assets/readme/wireframes/wirframe1.jpg)
+![wirframe 3](./assets/readme/wireframes/wireframe3.jpg)
 
 
 ## Database Diagram
