@@ -40,6 +40,7 @@ like/unlike a post and leave comments on a post. They can also participate on ou
     - [Login Page](#login-page)
     - [Logout Page](#logout-page)
     - [User Profile Page](#user-profile-page)
+    - [Navbar](#navbar)
   - [Messages and Interaction With Users](#messages-and-interaction-with-users)
     - [Sign up](#sign-up)
     - [Login](#login)
@@ -253,6 +254,15 @@ superuser they have access to the buttons for deleting or updating comments.
 ![User Profile Page](./assets/readme/readme-pictures/pages-screenshots/profile-page.jpeg)
 
 * On the Profile Page, users can update their informations.
+
+### Navbar
+
+![navbar](./assets/readme/readme-pictures/navbars/navbar1.PNG)
+![navbar](./assets/readme/readme-pictures/navbars/navbar2.PNG)
+![navbar](./assets/readme/readme-pictures/navbars/navbar3.PNG)
+![navbar](./assets/readme/readme-pictures/navbars/navbar4.PNG)
+
+
 
 ## Messages and Interaction With Users
 
