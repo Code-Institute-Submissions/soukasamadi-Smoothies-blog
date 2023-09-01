@@ -59,7 +59,7 @@ class RecipeDetail(View):
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
             liked = True
-        
+
         comment_form = CommentForm(data=request.POST)
 
         if comment_form.is_valid():
@@ -71,7 +71,7 @@ class RecipeDetail(View):
             messages.success(request, """
             Your comment was sent successfully and is awaiting approval!""")
         else:
-            comment_form = CommentForm() 
+            comment_form = CommentForm()
 
         return render(
             request,
@@ -207,4 +207,4 @@ class EditComment(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Comment
     template_name = 'recipes/edit_comment.html'
     form_class = CommentForm
-    success_message = 'The comment was successfully updated'       
+    success_message = 'The comment was successfully updated'

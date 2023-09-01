@@ -10,5 +10,3 @@ class RecipesConfig(AppConfig):
         Gets the user's details
         """
         import recipes.signals
-
-

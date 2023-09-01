@@ -38,7 +38,7 @@ class EditChallenge(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     """
     Edit Challenge
     """
-    model = Challenge   
+    model = Challenge
     form_class = ChallengeForm
     template_name = 'challenge/add_challenge.html'
     success_message = 'Your post was successfully updated !'
