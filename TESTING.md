@@ -1,4 +1,7 @@
 # the Smoothies Blog Testing
+
+Back to the [README](README.md)
+
 The testing.md file provides an overview of the testing conducted on Smoothies website. It covers code validation, accessibility, performance, testing on various devices, browser compatibility, testing user stories, and user feedback and improvements. Each section describes the tools used, the issues found (if any), and the corresponding test results.
  
 
