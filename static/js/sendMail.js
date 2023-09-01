@@ -1,14 +1,20 @@
 // Emailjs script
-function sendMail(contactForm) {
+function sendMail() {
+    var params = {
+        from_name: document.getElementById("name").value,
+        surname: document.getElementById("surname").value,
+        subject: document.getElementById("subject").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+    }
+
+    const serviceID = "service_9zv91ys";
+    const templateID = "template_laidu4t";
+
+
     emailjs
-        .send("service_jui1hv6", "tasty_blog_contact", {
-            from_name: contactForm.name.value,
-            surname: contactForm.surname.value,
-            subject: contactForm.subject.value,
-            email: contactForm.email.value,
-            message: contactForm.message.value,
-        })
-        .then(
+        .send(serviceID, templateID, params)
+        .then( 
             function (response) {
                 document.getElementById(
                     "email_alert"
