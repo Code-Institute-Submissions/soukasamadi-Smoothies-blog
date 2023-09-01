@@ -1,6 +1,6 @@
 /*******************************
 *                              *
-*        GOOGLE FONTS          *     
+*        GOOGLE FONTS          *
 *                              *
 *******************************/
 
@@ -179,7 +179,7 @@ a:hover {
 #searched-box .info-text {
     margin-top: 5%;
 }
-#searched-box .row {   
+#searched-box .row {
     padding: 25px;
 }
 #searched-box img {
@@ -231,7 +231,7 @@ a:hover {
 .login-box {
     margin-top: 20px;
 }
-.login-box .author-img {  
+.login-box .author-img {
     width: 30px;
     height: 30px;
     margin-top: 8px;
@@ -567,7 +567,7 @@ button.btn.btn-contact{
 }
 #blog-content-2,
 #chal-content-2,
-#home-content-2 {   
+#home-content-2 {
     display: none;
 }
 
@@ -651,7 +651,6 @@ body.modal-open {
     background-color: rgba(255, 255, 255, 0.323);
     margin-bottom: 150px;
     padding-top: 40px;
-    margin-top: -50px;
 }
 .logs-pages .btn-signup {
     margin-bottom: 20px;
@@ -917,6 +916,7 @@ body.modal-open {
         width: 80%;
         margin-left: 10%;
     }
+
 }
 @media only screen and (max-width: 600px) {
     .carousel-caption {
