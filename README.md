@@ -270,6 +270,75 @@ delete the following ones:
 * As superuser I can also approve comments, challenge#s posts and change the status and give other permissions to the users.<br>
 
 
+## Technologies Used
+
+### Languages Used
+
+* [HTML 5](https://en.wikipedia.org/wiki/HTML/)
+* [CSS 3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://www.javascript.com/)
+* [Django](https://www.python.org/)
+* [Python](https://www.djangoproject.com/)
+
+#### Django Packages
+
+* [Gunicorn](https://gunicorn.org/)<br>
+   As the server for Heroku
+* [Cloudinary](https://cloudinary.com/)<br>
+   Was used to host the static files and media
+* [Dj_database_url](https://pypi.org/project/dj-database-url/)<br>
+   To parse the database URL from the environment variables in Heroku
+* [Psycopg2](https://pypi.org/project/psycopg2/)<br>
+   As an adaptor for Python and PostgreSQL databases
+* [Summernote](https://summernote.org/)<br>
+   As a text editor
+* [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)<br>
+   For authentication, registration, account
+   management
+* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)<br>
+   To style the forms
+
+
+### Frameworks - Libraries - Programs Used
+
+* [Bootstrap](https://getbootstrap.com/)<br>
+   Was used to style the website, add responsiveness and interactivity
+* [Jquery](https://jquery.com/)<br>
+   All the scripts were written using jquery library
+* [Git](https://git-scm.com/)<br>
+   Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub
+* [GitHub](https://github.com/)<br>
+   GitHub is used to store the project's code after being pushed from Git
+* [Heroku](https://id.heroku.com)<br>
+   Heroku was used to deploy the live project
+* [PostgreSQL](https://www.postgresql.org/)<br>
+   Database used through heroku.
+* [VSCode](https://code.visualstudio.com/)<br>
+   VSCode was used to create and edit the website
+* [Lucidchart](https://lucid.app/)<br>
+   Lucidchart was used to create the database diagram
+* [PEP8](http://pep8online.com/)<br>
+   PEP8 was used to validate all the Python code
+* [W3C - HTML](https://validator.w3.org/)<br>
+   W3C- HTML was used to validate all the HTML code
+* [W3C - CSS](https://jigsaw.w3.org/css-validator/)<br>
+   W3C - CSS was used to validate the CSS code
+* [Fontawesome](https://fontawesome.com/)<br>
+   To add icons to the website
+* [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)<br>
+   To check App responsiveness and debugging
+* [Google Fonts](https://fonts.google.com/)<br>
+   To add the 2 fonts that were used throughout the project
+* [CANVA](https://www.canva.com/)<br>
+   To build the logos for the project and to build wireframes
+* [Coolors](https://coolors.co/)<br>
+   To build the colour palette of the project
+* [Emailjs](https://www.emailjs.com/)<br>
+   To send emails from the contact form
+
+
+
+
 
 
   
