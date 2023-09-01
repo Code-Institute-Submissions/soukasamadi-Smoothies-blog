@@ -43,3 +43,34 @@ Content Table
 4. Approve user's comments.
 5. Delete user's challenge that was posted previously.
 6. Change the website permissions for a user.
+
+### Agile Methodology
+
+All functionality and development of this project were managed using GitHub which Projects can be found
+[here](https://github.com/soukasamadi/Smoothies-blog/issues)
+
+### The Scope
+
+#### Main Site Goals
+
+* To provide users with a good experience when using the website.
+* To provide users with a visually pleasing website that is intuitive to use and easy to navigate.
+* To provide a website with a clear purpose.
+* To provide role-based permissions that allows user to interact with the website.
+
+## Design
+
+#### Colours
+
+![Colours Palete](./assets/readme/readme-pictures/color-palette.jpg)<br>
+
+* I choosed this colores to make the website simple and close to smoothies colores.
+  
+#### Typography
+
+* "Josefin Sans" font is used as the main font for the whole website.
+
+#### Imagery
+
+* All the imagery is related to the recipes and website design.
+The remaining imagery will be uploaded by the author to the database.
