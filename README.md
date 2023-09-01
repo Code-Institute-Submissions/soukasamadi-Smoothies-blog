@@ -147,6 +147,7 @@ I craeted a couple of wireframe to get a close idea about how the wesbite will l
 ## Database Diagram
 
 ![Database Diagrama](./assets/readme/Simple_Smoothies_DataBase_Diagram.png)<br>
+The favorite field is related to a future feature (Add recipes to favorite list).
 
 ## Features
 
