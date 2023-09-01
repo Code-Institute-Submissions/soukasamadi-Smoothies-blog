@@ -395,7 +395,7 @@ App
 
 * Fork this project by following the steps:
 
-1. Open [GitHub](https://github.com/PedroCristo/portfolio_project_4)
+1. Open [GitHub](https://github.com/soukasamadi/Smoothies-blog)
 2. Find the 'Fork' button at the top right of the page
 3. Once you click the button the fork will be in your repository
 
@@ -403,7 +403,7 @@ App
 
 * Clone this project by following the steps:
 
-1. Open [GitHub](https://github.com/soukasamadi/Smoothies-blog/)
+1. Open [GitHub](https://github.com/soukasamadi/Smoothies-blog)
 2. You will be provided with three options to choose from, HTTPS, SSH or GitHub CLI, click the clipboard icon in order
 to copy the URL
 1. Once you click the button the fork will be in your repository
@@ -411,6 +411,16 @@ to copy the URL
 3. Change the current working directory to the location that you want the cloned directory
 4. Type 'git clone' and paste the URL copied in step 3
 5. Press 'Enter' and the project is cloned
+
+
+## Credits
+
+### Content
+
+* All food recipes were taken from (and I was inspired by )[Simple green smoothies](https://simplegreensmoothies.com/)
+* The images were sourced from [Simple green smoothies too](https://simplegreensmoothies.com/)
+* The logo and favicon are my own design and build using canvas
+
 
 
 
