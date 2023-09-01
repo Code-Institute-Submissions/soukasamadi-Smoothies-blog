@@ -19,3 +19,53 @@ were entered into the online checker and no errors were found in any of the cust
 |views | All clear, no errors found | :white_check_mark:
 |forms | All clear, no errors found | :white_check_mark:
 |signals | All clear, no errors found | :white_check_mark:
+
+
+### Lighthouse
+
+Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on Desktop.
+
+![lighthouse](https://github.com/soukasamadi/Smoothies-blog/assets/131408125/ae4dced9-9b9d-4b9b-bef8-1ed556b16635)
+
+### HTML Validation
+
+![html-check-validator](https://github.com/soukasamadi/Smoothies-blog/assets/131408125/b14fcb08-9d0c-47f0-a23f-9d2ab350afb6)
+
+### CSS Validation
+
+![css-validator](https://github.com/soukasamadi/Smoothies-blog/assets/131408125/ee36aef1-b379-41c6-bc51-5d932e4fe524)
+![css-validator-warning](https://github.com/soukasamadi/Smoothies-blog/assets/131408125/cfd11df5-83a1-48b2-8d9a-e7162bb0110e)
+
+### JavaScript and jquery Validation
+
+![js-validator](https://github.com/soukasamadi/Smoothies-blog/assets/131408125/9595a2fd-1f34-4331-ac18-de23a3b9c79b)
+
+![jquery-validator](https://github.com/soukasamadi/Smoothies-blog/assets/131408125/e7c7c4e3-8dc8-4859-9275-9966673979e9)
+
+
+## Manual Testing
+
+I tested the whole website features and everything seems to work as it should.
+here is the Test case for this project: 
+
+![test case 1](https://github.com/soukasamadi/Smoothies-blog/assets/131408125/9b968acb-f21f-4b3e-b131-76e0148c1566)
+
+![test case 2](https://github.com/soukasamadi/Smoothies-blog/assets/131408125/3140be56-883f-434c-9ed3-2669ce35ed2f)
+![test case 3](https://github.com/soukasamadi/Smoothies-blog/assets/131408125/f139a72d-0999-46f2-8ea6-3a2615d1bc13)
+![test case 4](https://github.com/soukasamadi/Smoothies-blog/assets/131408125/e0bb95a6-1e23-48f1-b12a-7e4208c3ee58)
+
+You can find the whole test case [here](https://docs.google.com/spreadsheets/d/1zjgF-Venhyt5Ih8p6fvQ2mTkh-Tj8ilUuU2WZ6jdyR0/edit#gid=0)
+
+
+## Bugs
+### Fixed Bugs
+
+* The submit challenge did not work how it should at the first time, I couldt not add the post, it keepted reloading the page. so I fixed it by adding action ="." to the form.
+
+* T contact form was not working at the first time. it was showing the error message everytime I tried to send an email using the contact form. so deceided to update the server and the template on my emailjs account and recreate the sendMail function. and Ta-Da it works fine now.
+
+
+
+
+
+
