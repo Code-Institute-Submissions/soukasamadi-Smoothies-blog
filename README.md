@@ -196,5 +196,65 @@ superuser they have access to the buttons for deleting or updating comments.
 
 * On the Profile Page, users can update their informations.
 
+## Messages and Interaction With Users
 
+* Some interactive messages were added to the project to make the navigation on the website easier and to improve the
+user's experience.
+
+### Sign up
+
+![Sign up](./assets/readme/interactive-message/signed-up.jpeg)
+
+
+### Login
+
+![Login](./assets/readme/interactive-message/signed-in.jpeg)
+
+
+### Logout
+
+![Logout](./assets/readme/interactive-message/signed-out.jpeg)
+
+### Profile Update
+
+![Profile Update](./assets/readme/interactive-message/update-profile.jpeg)
+
+
+### Like Post
+
+![Like Post](./assets/readme/interactive-message/like-post.jpeg)
+
+
+### Unlike Post
+
+![Unlike Post](./assets/readme/interactive-message/unlike-post.jpeg)
+
+
+### Comment Post
+
+![Comment Post](./assets/readme/interactive-message/comment-awainting-aproval.jpeg)
+
+### Delete/Edit Comment
+
+![Delete Comment](./assets/readme/interactive-message/delete-comment.jpeg)
+![Delete Comment](./assets/readme/interactive-message/deleted-comment-success.jpeg)
+
+### Edit Comment
+
+![Edit Comment](./assets/readme/interactive-message/update-comment.jpeg)
+
+### Email Sent - Success
+
+![Email Sent - Success](./assets/readme/interactive-message/contact-success-email-sent.PNG)
+
+### Email Sent - Failed
+
+![Email Sent - Failed](./assets/readme/interactive-message/contact-something-went-wrong-PNG)
+
+You can find all the interactive message [here](https://github.com/soukasamadi/Smoothies-blog/tree/main/assets/readme/interactive%20message).
+
+
+
+
+  
 
