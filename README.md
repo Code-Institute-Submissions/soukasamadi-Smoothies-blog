@@ -254,6 +254,22 @@ user's experience.
 You can find all the interactive message [here](https://github.com/soukasamadi/Smoothies-blog/tree/main/assets/readme/interactive-message).
 
 
+## Admin Panel/Superuser
+![Admin Panel](./assets/readme/readme-pictures/pages-screenshots/admin-panel.jpeg)
+
+* On the Admin Panel, as an admin/superuser I have full access to CRUD functionality so I can view, create, edit and
+delete the following ones:
+
+1. Recipes
+2. Comments
+3. Author
+4. Categories
+5. Profiles
+6. challenges
+   
+* As superuser I can also approve comments, challenge#s posts and change the status and give other permissions to the users.<br>
+
+
 
 
   
