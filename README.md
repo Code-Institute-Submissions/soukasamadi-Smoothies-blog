@@ -232,7 +232,7 @@ user's experience.
 
 ### Comment Post
 
-![Comment Post](./assets/readme/interactive-message/comment-awainting-aproval.jpeg)
+![Comment Post](./assets/readme/interactive-message/comment-awainting-approval.jpeg)
 
 ### Delete/Edit Comment
 
@@ -249,9 +249,9 @@ user's experience.
 
 ### Email Sent - Failed
 
-![Email Sent - Failed](./assets/readme/interactive-message/contact-something-went-wrong-PNG)
+![Email Sent - Failed](./assets/readme/interactive-message/contact-something-went-wrong.PNG)
 
-You can find all the interactive message [here](https://github.com/soukasamadi/Smoothies-blog/tree/main/assets/readme/interactive%20message).
+You can find all the interactive message [here](https://github.com/soukasamadi/Smoothies-blog/tree/main/assets/readme/interactive-message).
 
 
 
