@@ -422,6 +422,18 @@ to copy the URL
 * The logo and favicon are my own design and build using canvas
 
 
+## Special Thanks
+
+I am grateful for the creators of the tutorial for their efforts in creating a helpful learning material.
+I would like to express my gratitude and extend my thanks to the following individuals who have been instrumental in my journey:
+
+* Akshat_Garg, my mentor, for his invaluable feedback, advice, guidance, and support throughout this experience.
+* Kai_Ci, our cohort facilitator, for her dedication and weekly meetings where she has provided guidance, support, and encouragement to our cohort.
+* The wonderful members of the Code Institute Slack community for their willingness to provide peer code reviews and support.
+
+I am truly grateful for their contributions, which have greatly enriched my learning and development.
+
+
 
 
 
