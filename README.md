@@ -6,7 +6,7 @@ like/unlike a post and leave comments on a post. They can also participate on ou
 
 [Find my Live Project Here !](https://smoothies-blog-fb8590efb21e.herokuapp.com/)
 
-<p align="center"><img src="./assets/readme/readme-pictures/pages-screenshots/home-page.jpeg"
+<p align="center" style="width:300px; heigth:500px"><img src="./assets/readme/readme-pictures/pages-screenshots/home-page.jpeg"
         alt="home page smoothies blog "></p>
 
 Content Table
@@ -79,6 +79,7 @@ The remaining imagery will be uploaded by the author to the database.
 ### Wireframes
 
 I craeted a couple of wireframe to get a close idea about how the wesbite will look like.
+
 ![wirframe 1](./assets/readme/wireframes/wireframe2.jpg)
 ![wirframe 2](./assets/readme/wireframes/wirframe1.jpg)
 ![wirframe 3](./assets/readme/wireframes/wireframe3.jpg)
@@ -87,3 +88,113 @@ I craeted a couple of wireframe to get a close idea about how the wesbite will l
 ## Database Diagram
 
 ![Database Diagrama](./assets/readme/Simple_Smoothies_DataBase_Diagram.png)<br>
+
+## Features
+
+### Home Page
+
+![Home Page](./assets/readme/readme-pictures/pages-screenshots/home-page.jpeg)
+
+* The hero image welcomes the user with a short message advertising what the website is about. These
+are 3 carousel images with a button. When the button is pressed, it brings the user down to the highlighted recipes.<br>
+
+* In the latest recipes, users can see a selection of 6 recipes. These recipes are
+chosen by the site admin by clicking the featured box in the post database.<br>
+
+### About Page
+
+![About Page](./assets/readme/readme-pictures/pages-screenshots/about-page.jpeg)
+
+* The About Page gives, users information about the website. It tells the users the main pupose ofteh website <br>
+
+### Blog Page
+
+![Blog Page](./assets/readme/readme-pictures/pages-screenshots/blog-page.jpeg)
+
+* On the Blog Page, users have access to the full recipes posts available on the website and they can also get more informations about smoothies and healthy meals routine.
+
+
+### Recipe Detail Page 
+
+![Post Detail Page - Top](./assets/readme/readme-pictures/pages-screenshots/post-details-page.jpeg)
+
+* At this page users can discover the smoothie ingredients and get more information about the recipe.
+* At the bottom of this page, users can read the comments posted by other users. If the user is logged in or is a 
+superuser they have access to the buttons for deleting or updating comments.
+
+### Edit Comments Page
+
+![Edit Comments Page](./assets/readme/readme-pictures/pages-screenshots/edit-comment-page.jpeg)
+
+* On this page, users are allowed to edit their own post comments.
+
+### Contact Page
+
+![Contact Page](./assets/readme/readme-pictures/pages-screenshots/contact-page.jpeg)<br><br>
+
+* The Contact Page allows users to get access to smoothies website contact details and they can also send email using the contac form there.
+
+### Categories Page
+
+![Categories Page ](./assets/readme/readme-pictures/pages-screenshots/all-recipes-page.jpeg)<br><br>
+
+* On the Categories Page, users can see the categories available in the blog and filter the posts by category.
+
+### Categories Results
+
+![Categories Results Page](./assets/readme/readme-pictures/pages-screenshots/categories-posts-page.jpeg)
+
+* On the Categories posts Page, users can access the post filtered by the chosen category.
+  
+### challenge Page
+
+![Challenge Page](./assets/readme/readme-pictures/pages-screenshots/challenge-page.jpeg)
+
+* On this page, registered users candiscover other users experince. If they had already published 
+  a post they are allowed to edit or delete their own posts
+
+### Add Challenge Page
+
+![Add Challenge Page](./assets/readme/readme-pictures/pages-screenshots/add-challenge-page.jpeg)
+
+* On this page, registered users can fill out the form to add or edit a post with their favourite cookbooks.
+
+### Search Page
+
+![Search Page](./assets/readme/readme-pictures/pages-screenshots/search-page.PNG)
+
+* In this page,  users can search by inputting a keyword in the search tool.
+
+### Search Results Page
+
+![Search Results Page](./assets/readme/readme-pictures/pages-screenshots/search-results-page.jpeg)
+
+* On the Search Results Page, users can see the recipes found by their search.  When their recipe is located, the user can go to the 
+  Post Details Page by clicking on the card result.
+
+### Signup Page
+
+![Signup Page](./assets/readme/readme-pictures/pages-screenshots/signup-page.jpeg)
+
+* On the Signup Page, a new user can sign up for the website by filling out and then submitting the form.
+
+### Login Page
+
+![Login Page](./assets/readme/readme-pictures/pages-screenshots/login-page.jpeg)
+
+* On the Login Page, users can log in to the website by inputting the username and password.
+
+### Logout Page
+
+![Logout Page](./assets/readme/readme-pictures/pages-screenshots/logout-page.jpeg)
+
+* On the Logout Page, users can confirm the logout.
+
+### User Profile Page
+
+![User Profile Page](./assets/readme/readme-pictures/pages-screenshots/profile-page.jpeg)
+
+* On the Profile Page, users can update their informations.
+
+
+
