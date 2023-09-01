@@ -391,6 +391,30 @@ App
 5. In Heroku settings, delete the config vars for `DISABLE_COLLECTSTATIC = 1
 
 
+## Forking This Project
+
+* Fork this project by following the steps:
+
+1. Open [GitHub](https://github.com/PedroCristo/portfolio_project_4)
+2. Find the 'Fork' button at the top right of the page
+3. Once you click the button the fork will be in your repository
+
+## Cloning This Project
+
+* Clone this project by following the steps:
+
+1. Open [GitHub](https://github.com/soukasamadi/Smoothies-blog/)
+2. You will be provided with three options to choose from, HTTPS, SSH or GitHub CLI, click the clipboard icon in order
+to copy the URL
+1. Once you click the button the fork will be in your repository
+2. Open a new terminal
+3. Change the current working directory to the location that you want the cloned directory
+4. Type 'git clone' and paste the URL copied in step 3
+5. Press 'Enter' and the project is cloned
+
+
+
+
 
 
   
