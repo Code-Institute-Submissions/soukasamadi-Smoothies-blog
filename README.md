@@ -381,6 +381,15 @@ App
 17. Click either Enable Automatic Deploys for automatic deployment when you push updates to Github
 
 
+## Final Deployment 
+
+1. Create a runtime.txt `python-3.8.13`
+2. Create a Procfile `web: gunicorn your_project_name.wsgi`
+3. When development is complete change the debug setting to: `DEBUG = False` in settings.py
+4. In this project the summernote editor was used so for this to work in Heroku add: `X_FRAME_OPTIONS = SAMEORIGIN `to
+   settings.py.
+5. In Heroku settings, delete the config vars for `DISABLE_COLLECTSTATIC = 1
+
 
 
 
