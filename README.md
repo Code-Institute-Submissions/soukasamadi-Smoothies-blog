@@ -53,6 +53,7 @@ like/unlike a post and leave comments on a post. They can also participate on ou
     - [Email Sent - Success](#email-sent---success)
     - [Email Sent - Failed](#email-sent---failed)
   - [Admin Panel/Superuser](#admin-panelsuperuser)
+    - [Future Features](#future-features)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
       - [Django Packages](#django-packages)
@@ -326,8 +327,13 @@ delete the following ones:
    
 * As superuser I can also approve comments, challenge#s posts and change the status and give other permissions to the users.<br>
 
+### Future Features
 
-## Technologies Used
+* I would like to add favorite feature so logged-in User can add recipes to their favorite list so that they can come back easily to check favorited recipes anytime.
+* I would like to add meals programms for registred users.
+* ...
+  
+  ## Technologies Used
 
 ### Languages Used
 
