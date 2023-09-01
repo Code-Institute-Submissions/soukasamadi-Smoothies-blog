@@ -153,7 +153,7 @@ a:hover {
     border: none;
 }
 .btn-primary:active {
-    background-color: #0b0c0c;
+    background-color: #0a0a0a;
     border: none;
 }
 .fa-times,
@@ -490,6 +490,10 @@ p.nav-link.welcome-nav{
 }
 #contact .email-sent-message h4 {
     font-size: clamp(1.3rem, 2vw, 1rem);
+}
+
+button.btn.btn-contact{
+    width: 100%;
 }
 /*******************************
 *                              *
