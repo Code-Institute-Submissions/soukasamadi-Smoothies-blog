@@ -9,8 +9,9 @@ like/unlike a post and leave comments on a post. They can also participate on ou
 <p align="center" style="width:300px; heigth:500px"><img src="./assets/readme/readme-pictures/pages-screenshots/home-page.jpeg"
         alt="home page smoothies blog "></p>
 
-Content Table
+# Content Table
 - [Smoothie Website - Introduction](#smoothie-website---introduction)
+- [Content Table](#content-table)
   - [User Experience - UX](#user-experience---ux)
     - [User Stories](#user-stories)
     - [Agile Methodology](#agile-methodology)
