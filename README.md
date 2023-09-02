@@ -6,8 +6,8 @@ like/unlike a post and leave comments on a post. They can also participate on ou
 
 [Find my Live Project Here !](https://smoothies-blog-fb8590efb21e.herokuapp.com/)
 
-<p align="center" style="width:300px; heigth:500px"><img src="./assets/readme/readme-pictures/pages-screenshots/home-page.jpeg"
-        alt="home page smoothies blog "></p>
+![responsive](https://github.com/soukasamadi/Smoothies-blog/assets/131408125/69112e19-a0bd-4ef7-aeb7-7f324d806696)
+
 
 # Content Table
 - [Smoothie Website - Introduction](#smoothie-website---introduction)
