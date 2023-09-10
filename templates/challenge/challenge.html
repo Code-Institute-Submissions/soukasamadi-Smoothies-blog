@@ -36,18 +36,17 @@
                     <div class="content-img">
                         <img src="{{ challenge.picture.url }}" alt="{{ challenge.goal }} Image">
                     </div>
-                    <div class="content-description">
-                        <h5>My Goal was :</h5>
-                        <h4>{{challenge.goal}}</h4>
-                        <a class="card-text" href="{{ challenge.link }}" target="_blank"><i class="fa-solid fa-globe"></i>
-                            My Favorite Smoothie !</a>
-                        <p><i class="far fa-comment-dots"></i><br>{{ challenge.review }}</p>
-                    </div>
                     <div class="author-info">
                         <span><i class="fa-solid fa-at"></i>{{ challenge.name | slice:":10" }} | </span>
                         <span><i class="fas fa-clock"></i>{{ challenge.timestamp }}</span>
                     </div>
-                    <hr class="hr-small">
+                    <div class="content-description">
+                        <h5></br>My Goal was :</h5>
+                        <h4>{{challenge.goal}}</h4>
+                        <a class="card-text" href="{{ challenge.link }}" target="_blank"><i class="fas fa-link"></i>
+                            My Favorite Smoothie !</a>
+                        <p><br>{{ challenge.review }}</p>
+                    </div>
                     {% if user.is_authenticated and user.username == challenge.name or user.is_superuser %}
                     <div class="text-center">
                         <a href="edit_challenge/{{challenge.id}}" class="btn-edit btn-sm btn-secondary mb-3"
@@ -99,20 +98,18 @@
                 <div class="challenge-card">
                     <div class="content-img">
                         <img src="{{ challenge.picture.url }}" alt="{{ challenge.goal }} Image">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                    <div class="content-description">
-                        <h5>My Goal was :</h5></br>
-                        <h4>{{challenge.goal}}</h4>
-                        <a class="card-text" href="{{ challenge.link }}" target="_blank"><i class="fa-solid fa-globe"></i>
-                            Link</a>
-                        <p><i class="far fa-comment-dots"></i><br>{{ challenge.review }}</p>
                     </div>
                     <div class="author-info">
                         <span><i class="fa-solid fa-at"></i>{{ challenge.name | slice:":10" }} | </span>
                         <span><i class="fas fa-clock"></i>{{ challenge.timestamp }}</span>
                     </div>
-                    <hr class="hr-small">
+                    <div class="content-description">
+                        <h5></br>My Goal was :</h5>
+                        <h4>{{challenge.goal}}</h4>
+                        <a class="card-text" href="{{ challenge.link }}" target="_blank"><i class="fas fa-link"></i>
+                            My Favorite Smoothie !</a>
+                        <p><br>{{ challenge.review }}</p>
+                    </div>
                     {% if user.is_authenticated and user.username == challenge.name or user.is_superuser %}
                     <div class="text-center">
                         <a href="edit_challenge/{{challenge.id}}" class="btn-edit btn-sm btn-secondary mb-3"
